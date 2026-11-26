@@ -6,10 +6,10 @@
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <!-- ===================================================================
        1) ANTI-FOUC — script BLOQUEANTE, PRIMEIRO no <head>, ANTES das fontes
-          e do learn.css. Le inema.prefs (global, cross-curso) e aplica
+          e do learn.css. Le ARCKHÉ.prefs (global, cross-curso) e aplica
           data-theme + color-scheme + --measure/--leading/--fontscale +
           data-font/--font-disp/--font-body ANTES do primeiro paint.
-          try/catch total => default papel no erro (preserva a marca INEMA).
+          try/catch total => default papel no erro (preserva a marca ARCKHÉ).
        =================================================================== -->
 <script>
   (function () {
@@ -19,7 +19,7 @@
       function clone(o) { var r = {}; for (var x in o) r[x] = o[x]; return r; }
       var p = clone(DEF);
       try {
-        var raw = localStorage.getItem('inema.prefs');
+        var raw = localStorage.getItem('ARCKHÉ.prefs');
         if (raw) {
           var parsed = JSON.parse(raw);
           if (parsed && typeof parsed === 'object') {
@@ -74,10 +74,10 @@
     }
   })();
   </script>
-<meta content="inema-ncia" name="inema-course"/>
-<script data-inema-manifest="" type="application/json">
+<meta content="ARCKHÉ-ncia" name="ARCKHÉ-course"/>
+<script data-ARCKHÉ-manifest="" type="application/json">
 {
-  "course": "inema-ncia",
+  "course": "ARCKHÉ-ncia",
   "tracks": [
     {
       "n": "1",
@@ -178,48 +178,48 @@
   ]
 }
   </script>
-<title>Learning path 1 — Neuroscience of Attention &amp; Focus | INEMA.NCIA</title>
+<title>Learning path 1 — Neuroscience of Attention &amp; Focus | ARCKHÉ.NCIA</title>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&amp;family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400;1,8..60,500&amp;family=IBM+Plex+Mono:wght@400;500&amp;family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet"/>
 <link href="../assets/learn.css" rel="stylesheet"/>
-<link href="https://inematds.github.io/inemancia2/t1.html" hreflang="pt-BR" rel="alternate"/><link href="https://inematds.github.io/inemancia2/en/t1.html" hreflang="en" rel="alternate"/><link href="https://inematds.github.io/inemancia2/es/t1.html" hreflang="es" rel="alternate"/></head>
-<body><div class="inema-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../t1.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="t1.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">EN</a><a href="../es/t1.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
+<link href="https://linnoff88-dev.github.io/arckhe-/t1.html" hreflang="pt-BR" rel="alternate"/><link href="https://linnoff88-dev.github.io/arckhe-/en/t1.html" hreflang="en" rel="alternate"/><link href="https://linnoff88-dev.github.io/arckhe-/es/t1.html" hreflang="es" rel="alternate"/></head>
+<body><div class="ARCKHÉ-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../t1.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="t1.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">EN</a><a href="../es/t1.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
 <a class="skip" href="#reading">Skip to content</a>
 <div class="reader-bar">
 <div class="reader-inner">
-<a class="wordmark" href="https://inema.club" rel="noopener" target="_blank">INEMA<span class="dot">.</span><span class="club">CLUB</span></a>
-<div class="reader-controls" data-inema-appearance="">
-<span class="rc-read"><span data-inema-meter="trilha:1"><span data-inema-meter-frac=""><strong>0</strong> of 6</span></span> read</span>
+<a class="wordmark" href="https://ARCKHÉ AI" rel="noopener" target="_blank">ARCKHÉ<span class="dot">.</span><span class="club">CLUB</span></a>
+<div class="reader-controls" data-ARCKHÉ-appearance="">
+<span class="rc-read"><span data-ARCKHÉ-meter="trilha:1"><span data-ARCKHÉ-meter-frac=""><strong>0</strong> of 6</span></span> read</span>
 <div aria-label="Reading theme" class="rc-group" role="group">
-<button aria-pressed="true" class="rc-btn" data-inema-set-theme="papel" type="button">Role</button>
-<button aria-pressed="false" class="rc-btn" data-inema-set-theme="sepia" type="button">Sepia</button>
-<button aria-pressed="false" class="rc-btn" data-inema-set-theme="escuro" type="button">Dark</button>
+<button aria-pressed="true" class="rc-btn" data-ARCKHÉ-set-theme="papel" type="button">Role</button>
+<button aria-pressed="false" class="rc-btn" data-ARCKHÉ-set-theme="sepia" type="button">Sepia</button>
+<button aria-pressed="false" class="rc-btn" data-ARCKHÉ-set-theme="escuro" type="button">Dark</button>
 </div>
 <div aria-label="Reading source" class="rc-group" role="group">
-<button aria-pressed="true" class="rc-btn" data-inema-set-font="serif" type="button">Serif</button>
-<button aria-pressed="false" class="rc-btn" data-inema-set-font="sans" type="button">Sans</button>
-<button aria-pressed="false" class="rc-btn" data-inema-set-font="hyperlegible" title="Atkinson Hyperlegible" type="button">Aa↹</button>
+<button aria-pressed="true" class="rc-btn" data-ARCKHÉ-set-font="serif" type="button">Serif</button>
+<button aria-pressed="false" class="rc-btn" data-ARCKHÉ-set-font="sans" type="button">Sans</button>
+<button aria-pressed="false" class="rc-btn" data-ARCKHÉ-set-font="hyperlegible" title="Atkinson Hyperlegible" type="button">Aa↹</button>
 </div>
 <div aria-label="Text size" class="rc-group" role="group">
-<button aria-pressed="true" class="rc-btn" data-inema-set-fontscale="100" type="button">A</button>
-<button aria-pressed="false" class="rc-btn" data-inema-set-fontscale="112" type="button">A+</button>
-<button aria-pressed="false" class="rc-btn" data-inema-set-fontscale="125" type="button">A++</button>
+<button aria-pressed="true" class="rc-btn" data-ARCKHÉ-set-fontscale="100" type="button">A</button>
+<button aria-pressed="false" class="rc-btn" data-ARCKHÉ-set-fontscale="112" type="button">A+</button>
+<button aria-pressed="false" class="rc-btn" data-ARCKHÉ-set-fontscale="125" type="button">A++</button>
 </div>
 <div aria-label="Line width" class="rc-group" role="group">
-<button aria-pressed="false" class="rc-btn" data-inema-set-linewidth="62" type="button">Narrow</button>
-<button aria-pressed="true" class="rc-btn" data-inema-set-linewidth="66" type="button">Medium</button>
-<button aria-pressed="false" class="rc-btn" data-inema-set-linewidth="70" type="button">Broad</button>
+<button aria-pressed="false" class="rc-btn" data-ARCKHÉ-set-linewidth="62" type="button">Narrow</button>
+<button aria-pressed="true" class="rc-btn" data-ARCKHÉ-set-linewidth="66" type="button">Medium</button>
+<button aria-pressed="false" class="rc-btn" data-ARCKHÉ-set-linewidth="70" type="button">Broad</button>
 </div>
 </div>
 </div>
 </div>
 <header class="masthead">
 <nav aria-label="Where you are" class="wayfind">
-<span><a href="index.html" style="text-decoration:none">INEMA.NCIA</a></span><span class="sep">·</span>
+<span><a href="index.html" style="text-decoration:none">ARCKHÉ.NCIA</a></span><span class="sep">·</span>
 <span>Learning path <b>1</b></span><span class="sep">·</span>
 <span>2 modules · 6 sections</span><span class="sep">·</span>
-<button data-inema-journey-open="" type="button">My journey <span class="inema-journey-badge" data-count="0" data-inema-journey-badge="">0</span></button>
+<button data-ARCKHÉ-journey-open="" type="button">My journey <span class="ARCKHÉ-journey-badge" data-count="0" data-ARCKHÉ-journey-badge="">0</span></button>
 </nav>
 <nav aria-label="Course tracks" class="course-nav" data-course-nav="">
 <a class="cn-home" href="index.html">Start</a>
@@ -234,7 +234,7 @@
 </header>
 <main class="spread"><div class="leaf">
 <article class="reading" id="reading">
-<p class="kicker">Learning path 1 · INEMA.NCIA</p>
+<p class="kicker">Learning path 1 · ARCKHÉ.NCIA</p>
 <h1 class="module">The Neuroscience of Attention &amp; Focus</h1>
 <p class="deck">Before any technique, understand the organ at stake: why your attention is auctioned off and how distraction costs more than it seems.</p>
 <p class="read-meta"><span class="here">Learning path index</span><span>2 modules</span><span>6 sections</span></p>
@@ -283,23 +283,23 @@ cognitive literacy.</p></div>
 </details>
 </section>
 <section aria-label="My journey" class="journey">
-<div class="journey-top"><h2><span class="ico">❧</span> My journey</h2><button class="journey-cta" data-inema-journey-open="" type="button">Open the notebook →</button></div>
+<div class="journey-top"><h2><span class="ico">❧</span> My journey</h2><button class="journey-cta" data-ARCKHÉ-journey-open="" type="button">Open the notebook →</button></div>
 <div class="journey-body">
-<div class="jstat"><div class="k">In this track</div><div class="v" data-inema-meter="trilha:1"><span data-inema-meter-frac=""><strong>0</strong> of 6</span> <span class="nm">topics</span><div class="progress-line"><span class="progress-line__fill" data-inema-meter-fill=""></span></div></div></div>
-<div class="jstat"><div class="k">In the course</div><div class="v" data-inema-meter="curso"><span data-inema-meter-frac=""><strong>0</strong> of 27</span> <span class="nm">covered</span><div class="progress-line"><span class="progress-line__fill" data-inema-meter-fill=""></span></div></div></div>
+<div class="jstat"><div class="k">In this track</div><div class="v" data-ARCKHÉ-meter="trilha:1"><span data-ARCKHÉ-meter-frac=""><strong>0</strong> of 6</span> <span class="nm">topics</span><div class="progress-line"><span class="progress-line__fill" data-ARCKHÉ-meter-fill=""></span></div></div></div>
+<div class="jstat"><div class="k">In the course</div><div class="v" data-ARCKHÉ-meter="curso"><span data-ARCKHÉ-meter-frac=""><strong>0</strong> of 27</span> <span class="nm">covered</span><div class="progress-line"><span class="progress-line__fill" data-ARCKHÉ-meter-fill=""></span></div></div></div>
 </div>
 </section>
 <div class="nextup"><div class="txt"><div class="k">Continue</div><div class="t">Learning path 2 — Perception &amp; Self-Knowledge</div></div><a class="go" href="t2.html">Next →</a></div>
 </article>
 <aside aria-label="Margin" class="margin-rail">
 <aside class="sidenote" data-kind="definicao"><div class="tag">How to read</div> This is the index page for <b>Learning path 1</b>: it lists the <b>modules</b>. Click a module to open the full lesson.</aside>
-<aside class="sidenote" data-kind="fonte"><div class="tag">Origin</div> Content from the INEMA.NCIA Telegram channel, rewritten as reading material. <div class="src-line">t.me/c/2414677686</div></aside>
+<aside class="sidenote" data-kind="fonte"><div class="tag">Origin</div> Content from the ARCKHÉ.NCIA Telegram channel, rewritten as reading material. <div class="src-line">t.me/c/2414677686</div></aside>
 </aside>
 </div></main>
-<footer class="colophon"><span>INEMA.CLUB · Student Workbook</span><span class="pg">Learning path 1 — index</span><span>Set in Spectral &amp; Source Serif 4</span></footer>
+<footer class="colophon"><span>ARCKHÉ AI · Student Workbook</span><span class="pg">Learning path 1 — index</span><span>Set in Spectral &amp; Source Serif 4</span></footer>
 <script src="../assets/learn.js"></script>
 <script>
-    if (window.INEMA && typeof window.INEMA.init === "function") { window.INEMA.init(); }
+    if (window.ARCKHÉ && typeof window.ARCKHÉ.init === "function") { window.ARCKHÉ.init(); }
   </script>
 </body>
 </html>

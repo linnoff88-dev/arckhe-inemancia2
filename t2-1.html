@@ -6,10 +6,10 @@
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <!-- ===================================================================
        1) ANTI-FOUC — script BLOQUEANTE, PRIMEIRO no <head>, ANTES das fontes
-          e do learn.css. Le inema.prefs (global, cross-curso) e aplica
+          e do learn.css. Le ARCKHÉ.prefs (global, cross-curso) e aplica
           data-theme + color-scheme + --measure/--leading/--fontscale +
           data-font/--font-disp/--font-body ANTES do primeiro paint.
-          try/catch total => default papel no erro (preserva a marca INEMA).
+          try/catch total => default papel no erro (preserva a marca ARCKHÉ).
        =================================================================== -->
 <script>
   (function () {
@@ -19,7 +19,7 @@
       function clone(o) { var r = {}; for (var x in o) r[x] = o[x]; return r; }
       var p = clone(DEF);
       try {
-        var raw = localStorage.getItem('inema.prefs');
+        var raw = localStorage.getItem('ARCKHÉ.prefs');
         if (raw) {
           var parsed = JSON.parse(raw);
           if (parsed && typeof parsed === 'object') {
@@ -74,10 +74,10 @@
     }
   })();
   </script>
-<meta content="inema-ncia" name="inema-course"/>
-<script data-inema-manifest="" type="application/json">
+<meta content="ARCKHÉ-ncia" name="ARCKHÉ-course"/>
+<script data-ARCKHÉ-manifest="" type="application/json">
 {
-  "course": "inema-ncia",
+  "course": "ARCKHÉ-ncia",
   "tracks": [
     {
       "n": "1",
@@ -178,49 +178,49 @@
   ]
 }
   </script>
-<title>Modulo 2-1 — Percepcao &amp; valor | INEMA.NCIA</title>
+<title>Modulo 2-1 — Percepcao &amp; valor | ARCKHÉ.NCIA</title>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&amp;family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400;1,8..60,500&amp;family=IBM+Plex+Mono:wght@400;500&amp;family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet"/>
 <link href="./assets/learn.css" rel="stylesheet"/>
-<link href="https://inematds.github.io/inemancia2/t2-1.html" hreflang="pt-BR" rel="alternate"/><link href="https://inematds.github.io/inemancia2/en/t2-1.html" hreflang="en" rel="alternate"/><link href="https://inematds.github.io/inemancia2/es/t2-1.html" hreflang="es" rel="alternate"/></head>
-<body><div class="inema-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="t2-1.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">PT</a><a href="en/t2-1.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="es/t2-1.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
+<link href="https://linnoff88-dev.github.io/arckhe-/t2-1.html" hreflang="pt-BR" rel="alternate"/><link href="https://linnoff88-dev.github.io/arckhe-/en/t2-1.html" hreflang="en" rel="alternate"/><link href="https://linnoff88-dev.github.io/arckhe-/es/t2-1.html" hreflang="es" rel="alternate"/></head>
+<body><div class="ARCKHÉ-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="t2-1.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">PT</a><a href="en/t2-1.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="es/t2-1.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
 <a class="skip" href="#reading">Pular para o conteudo</a>
 <div class="reader-bar">
 <div class="reader-inner">
-<a class="wordmark" href="https://inema.club" rel="noopener" target="_blank">INEMA<span class="dot">.</span><span class="club">CLUB</span></a>
-<div class="reader-controls" data-inema-appearance="">
-<span class="rc-read"><span data-inema-meter="modulo:2-1"><span data-inema-meter-frac=""><strong>0</strong> de 3</span></span> lidas</span>
+<a class="wordmark" href="https://ARCKHÉ AI" rel="noopener" target="_blank">ARCKHÉ<span class="dot">.</span><span class="club">CLUB</span></a>
+<div class="reader-controls" data-ARCKHÉ-appearance="">
+<span class="rc-read"><span data-ARCKHÉ-meter="modulo:2-1"><span data-ARCKHÉ-meter-frac=""><strong>0</strong> de 3</span></span> lidas</span>
 <div aria-label="Tema de leitura" class="rc-group" role="group">
-<button aria-pressed="true" class="rc-btn" data-inema-set-theme="papel" type="button">Papel</button>
-<button aria-pressed="false" class="rc-btn" data-inema-set-theme="sepia" type="button">Sepia</button>
-<button aria-pressed="false" class="rc-btn" data-inema-set-theme="escuro" type="button">Escuro</button>
+<button aria-pressed="true" class="rc-btn" data-ARCKHÉ-set-theme="papel" type="button">Papel</button>
+<button aria-pressed="false" class="rc-btn" data-ARCKHÉ-set-theme="sepia" type="button">Sepia</button>
+<button aria-pressed="false" class="rc-btn" data-ARCKHÉ-set-theme="escuro" type="button">Escuro</button>
 </div>
 <div aria-label="Fonte de leitura" class="rc-group" role="group">
-<button aria-pressed="true" class="rc-btn" data-inema-set-font="serif" type="button">Serif</button>
-<button aria-pressed="false" class="rc-btn" data-inema-set-font="sans" type="button">Sans</button>
-<button aria-pressed="false" class="rc-btn" data-inema-set-font="hyperlegible" title="Atkinson Hyperlegible" type="button">Aa↹</button>
+<button aria-pressed="true" class="rc-btn" data-ARCKHÉ-set-font="serif" type="button">Serif</button>
+<button aria-pressed="false" class="rc-btn" data-ARCKHÉ-set-font="sans" type="button">Sans</button>
+<button aria-pressed="false" class="rc-btn" data-ARCKHÉ-set-font="hyperlegible" title="Atkinson Hyperlegible" type="button">Aa↹</button>
 </div>
 <div aria-label="Tamanho do texto" class="rc-group" role="group">
-<button aria-pressed="true" class="rc-btn" data-inema-set-fontscale="100" type="button">A</button>
-<button aria-pressed="false" class="rc-btn" data-inema-set-fontscale="112" type="button">A+</button>
-<button aria-pressed="false" class="rc-btn" data-inema-set-fontscale="125" type="button">A++</button>
+<button aria-pressed="true" class="rc-btn" data-ARCKHÉ-set-fontscale="100" type="button">A</button>
+<button aria-pressed="false" class="rc-btn" data-ARCKHÉ-set-fontscale="112" type="button">A+</button>
+<button aria-pressed="false" class="rc-btn" data-ARCKHÉ-set-fontscale="125" type="button">A++</button>
 </div>
 <div aria-label="Largura da linha" class="rc-group" role="group">
-<button aria-pressed="false" class="rc-btn" data-inema-set-linewidth="62" type="button">Estreito</button>
-<button aria-pressed="true" class="rc-btn" data-inema-set-linewidth="66" type="button">Medio</button>
-<button aria-pressed="false" class="rc-btn" data-inema-set-linewidth="70" type="button">Largo</button>
+<button aria-pressed="false" class="rc-btn" data-ARCKHÉ-set-linewidth="62" type="button">Estreito</button>
+<button aria-pressed="true" class="rc-btn" data-ARCKHÉ-set-linewidth="66" type="button">Medio</button>
+<button aria-pressed="false" class="rc-btn" data-ARCKHÉ-set-linewidth="70" type="button">Largo</button>
 </div>
 </div>
 </div>
 </div>
 <header class="masthead">
 <nav aria-label="Onde voce esta" class="wayfind">
-<span><a href="index.html" style="text-decoration:none">INEMA.NCIA</a></span><span class="sep">·</span>
+<span><a href="index.html" style="text-decoration:none">ARCKHÉ.NCIA</a></span><span class="sep">·</span>
 <span><a href="t2.html" style="text-decoration:none">Trilha <b>2</b></a></span><span class="sep">·</span>
 <span>Modulo <b>2-1</b></span><span class="sep">·</span>
-<span data-inema-section-counter="">Secao 1 de 3</span><span class="sep">·</span>
-<button data-inema-journey-open="" type="button">Minha jornada <span class="inema-journey-badge" data-count="0" data-inema-journey-badge="">0</span></button>
+<span data-ARCKHÉ-section-counter="">Secao 1 de 3</span><span class="sep">·</span>
+<button data-ARCKHÉ-journey-open="" type="button">Minha jornada <span class="ARCKHÉ-journey-badge" data-count="0" data-ARCKHÉ-journey-badge="">0</span></button>
 </nav>
 <nav aria-label="Trilhas do curso" class="course-nav" data-course-nav="">
 <a class="cn-home" href="index.html">Início</a>
@@ -235,12 +235,12 @@
 </header>
 <main class="spread"><div class="leaf">
 <article class="reading" id="reading">
-<p class="kicker">Modulo 2-1 · Trilha 2 · INEMA.NCIA</p>
+<p class="kicker">Modulo 2-1 · Trilha 2 · ARCKHÉ.NCIA</p>
 <h1 class="module">Percepcao &amp; valor</h1>
 <p class="deck">A percepcao como leitura, nao fato: como voce se ve, como o valor nasce no olhar e os moldes que herdamos.</p>
 <p class="read-meta"><span class="here">Lendo agora</span><span>3 secoes</span><span><a href="t2.html" style="color:inherit">← indice da trilha</a></span></p>
 <section aria-label="O que este modulo cobre" class="aims"><h2>O que este modulo cobre</h2><ul><li>Como a autopercepcao engana</li><li>Percepcao e o valor que ela cria</li><li>Arquetipos: os moldes do comportamento</li></ul></section>
-<nav aria-label="Sumario do modulo" class="toc" data-inema-toc="">
+<nav aria-label="Sumario do modulo" class="toc" data-ARCKHÉ-toc="">
 <p class="toc-head">Sumario do modulo</p>
 <ol>
 <li class="current"><span class="dot-now"></span><span class="n">1</span><a href="#topico-1"><span class="t">Como a autopercepcao engana</span></a></li>
@@ -248,18 +248,18 @@
 <li><span class="n">3</span><a href="#topico-3"><span class="t">Arquetipos: os moldes do comportamento</span></a><span class="leader"></span></li>
 </ol>
 </nav>
-<section data-inema-module="2-1" data-inema-topic="modulo-2-1#topico-1" data-inema-track="2" id="topico-1">
+<section data-ARCKHÉ-module="2-1" data-ARCKHÉ-topic="modulo-2-1#topico-1" data-ARCKHÉ-track="2" id="topico-1">
 <div class="section-mark">
 <span class="where">Secao 1 de 3</span><span>·</span><span>Autopercepcao</span>
 </div>
 <h2 class="head"><span class="num">1.</span>Como a autopercepcao engana</h2>
 <div class="prose">
-<p class="lede dropcap" data-inema-block="m2-t1-p1">A imagem que voce faz da propria competencia
+<p class="lede dropcap" data-ARCKHÉ-block="m2-t1-p1">A imagem que voce faz da propria competencia
               raramente coincide com a competencia real. Quem sabe pouco tende a se achar muito bom; quem sabe
               muito tende a duvidar de si. Esse descompasso entre o que somos e o que <em>achamos</em> que somos
               e estudado na psicologia, na educacao e na gestao de pessoas — e ha alguns modelos que o
               explicam.<span class="sidenote-ref">1</span></p>
-<p data-inema-block="m2-t1-p2">O mais conhecido e o <strong>efeito Dunning-Kruger</strong>: pessoas com
+<p data-ARCKHÉ-block="m2-t1-p2">O mais conhecido e o <strong>efeito Dunning-Kruger</strong>: pessoas com
               pouco conhecimento numa area costumam superestimar suas habilidades, enquanto as mais competentes
               subestimam o proprio nivel. Quanto menos alguem sabe, mais confiante pode ficar numa percepcao
               equivocada de dominio — e e justamente a experiencia que traz a consciencia das limitacoes e
@@ -267,7 +267,7 @@
               uns conceitos basicos; o programador experiente, mesmo dominando tecnicas avancadas, sente que
               ainda ha muito a aprender.</p>
 <h3 class="sub">O reverso: quando a competencia se sente fraude</h3>
-<p data-inema-block="m2-t1-p3">A <strong>sindrome do impostor</strong> e o fenomeno oposto. Pessoas
+<p data-ARCKHÉ-block="m2-t1-p3">A <strong>sindrome do impostor</strong> e o fenomeno oposto. Pessoas
               altamente qualificadas sentem que nao sao boas o suficiente, ou que seu sucesso e fruto de sorte e
               nao de competencia. Subestimam as proprias capacidades e vivem com o medo de serem “expostas”.
               Um lider com anos de experiencia pode acreditar que nao e capaz de conduzir a equipe, atribuindo
@@ -289,7 +289,7 @@
 </details>
 </div>
 <div class="prose">
-<p data-inema-block="m2-t1-p4">A peca que costura tudo isso e a <strong>metacognicao</strong>: avaliar
+<p data-ARCKHÉ-block="m2-t1-p4">A peca que costura tudo isso e a <strong>metacognicao</strong>: avaliar
               o proprio conhecimento e as proprias habilidades. Quem a tem desenvolvida enxerga as proprias
               capacidades e limites com realismo; quem a tem fraca tende a superestimar o que entende. O estudante
               com boa metacognicao reconhece quando nao sabe algo e vai atras de ajuda; sem ela, acredita que sabe
@@ -314,26 +314,26 @@
 </div>
 </details>
 </section>
-<section data-inema-module="2-1" data-inema-topic="modulo-2-1#topico-2" data-inema-track="2" id="topico-2">
+<section data-ARCKHÉ-module="2-1" data-ARCKHÉ-topic="modulo-2-1#topico-2" data-ARCKHÉ-track="2" id="topico-2">
 <div class="section-mark">
 <span class="where">Secao 2 de 3</span><span>·</span><span>Valor</span>
 </div>
 <h2 class="head"><span class="num">2.</span>Percepcao e o valor que ela cria</h2>
 <div class="prose">
-<p class="lede" data-inema-block="m2-t2-p1">Atividades identicas podem ser percebidas de formas opostas
+<p class="lede" data-ARCKHÉ-block="m2-t2-p1">Atividades identicas podem ser percebidas de formas opostas
               — e a percepcao, nao o fato, e o que costuma decidir a experiencia. Alguem parado olhando pela
               janela parece um “antissocial”; coloque um cigarro na mao da mesma pessoa e ela vira um
               “filosofo pensativo”. Nada mudou na cena, so o <em>enquadramento</em>. Reenquadrar e
               transformar um problema em oportunidade: o desemprego vira “ano sabatico” sem que um
               unico fato se altere.</p>
-<p data-inema-block="m2-t2-p2">A sensacao de <strong>escolha e controle</strong> importa mais do que a
+<p data-ARCKHÉ-block="m2-t2-p2">A sensacao de <strong>escolha e controle</strong> importa mais do que a
               realidade objetiva. Pensionistas costumam ser mais felizes do que jovens desempregados, mesmo com
               tempo livre e pouco dinheiro — porque acreditam ter <em>escolhido</em> aquela situacao,
               enquanto os jovens sentem que ela lhes foi imposta. O experimento dos caes na caixa diz o mesmo:
               dois caes recebem choques, mas o que tem um botao para interrompe-los nao fica deprimido. O que
               muda nao e a dor, e o <em>controle</em> sobre ela.<span class="sidenote-ref">3</span></p>
 <h3 class="sub">O valor percebido vale tanto quanto o valor real</h3>
-<p data-inema-block="m2-t2-p3">O mesmo R$ 20 mil em impostos gera frustracao; doado a um hospital, vira
+<p data-ARCKHÉ-block="m2-t2-p3">O mesmo R$ 20 mil em impostos gera frustracao; doado a um hospital, vira
               filantropia — e o numero e identico. O economista Von Mises rejeitava a distincao entre valor
               “real” (o produzido) e “percebido” (o do marketing): num restaurante, o
               valor esta tanto na comida quanto no ambiente limpo. A percepcao ate “vaza” para o corpo:
@@ -381,19 +381,19 @@
 </details>
 </div>
 </section>
-<section data-inema-module="2-1" data-inema-topic="modulo-2-1#topico-3" data-inema-track="2" id="topico-3">
+<section data-ARCKHÉ-module="2-1" data-ARCKHÉ-topic="modulo-2-1#topico-3" data-ARCKHÉ-track="2" id="topico-3">
 <div class="section-mark">
 <span class="where">Secao 3 de 3</span><span>·</span><span>Arquetipos</span>
 </div>
 <h2 class="head"><span class="num">3.</span>Arquetipos: os moldes do comportamento</h2>
 <div class="prose">
-<p class="lede" data-inema-block="m2-t3-p1">Arquetipos sao padroes universais de comportamento,
+<p class="lede" data-ARCKHÉ-block="m2-t3-p1">Arquetipos sao padroes universais de comportamento,
               simbolos ou imagens que, segundo Carl Gustav Jung, residem no <em>inconsciente coletivo</em>. Eles
               representam caracteristicas, emocoes e experiencias compartilhadas por toda a humanidade —
               independentemente de cultura, epoca ou lugar — e aparecem em mitos, sonhos, religiao, histórias
               e ate em marcas. Sao moldes que ajudam a estruturar narrativas e influenciam como percebemos o mundo
               e a nos mesmos.<span class="sidenote-ref">5</span></p>
-<p data-inema-block="m2-t3-p2">Jung identificou varios, e alguns ficaram celebres. <strong>O Heroi</strong>
+<p data-ARCKHÉ-block="m2-t3-p2">Jung identificou varios, e alguns ficaram celebres. <strong>O Heroi</strong>
               encarna coragem e superacao (Hercules, Superman). <strong>A Sombra</strong> e o lado reprimido,
               onde moram medos e impulsos escondidos (Darth Vader, os viloes). <strong>O Velho Sabio</strong>
               orienta como mentor (Yoda, Gandalf). <strong>O Inocente</strong> traz pureza e otimismo (Alice).
@@ -401,7 +401,7 @@
               controle e estabilidade; <strong>o Amante</strong>, paixao e conexao (Romeu e Julieta); e <strong>o
               Bobo da Corte</strong> usa o humor para desafiar normas (o Coringa).</p>
 <h3 class="sub">Do mito a marca</h3>
-<p data-inema-block="m2-t3-p3">No marketing, arquetipos servem para criar conexao emocional entre marca
+<p data-ARCKHÉ-block="m2-t3-p3">No marketing, arquetipos servem para criar conexao emocional entre marca
               e consumidor. A Nike se apoia no Heroi (superacao, forca); a Coca-Cola, no Inocente (felicidade,
               nostalgia); a Jeep, no Explorador (aventura, liberdade); Dior e Chanel, no Amante (paixao, beleza).
               Em todos os casos o mecanismo e o mesmo: o arquetipo refere um aspecto universal da experiencia
@@ -424,11 +424,11 @@
 </details>
 </section>
 <section aria-label="Minha jornada" class="journey">
-<div class="journey-top"><h2><span class="ico">❧</span> Minha jornada</h2><button class="journey-cta" data-inema-journey-open="" type="button">Abrir caderno →</button></div>
+<div class="journey-top"><h2><span class="ico">❧</span> Minha jornada</h2><button class="journey-cta" data-ARCKHÉ-journey-open="" type="button">Abrir caderno →</button></div>
 <div class="journey-body">
-<div class="jstat"><div class="k">Neste modulo</div><div class="v" data-inema-meter="modulo:2-1"><span data-inema-meter-frac=""><strong>0</strong> de 3</span> <span class="nm">secoes lidas</span><div class="progress-line"><span class="progress-line__fill" data-inema-meter-fill=""></span></div></div></div>
-<div class="jstat"><div class="k">Na trilha 2</div><div class="v" data-inema-meter="trilha:2"><span data-inema-meter-frac=""><strong>0</strong> de 5</span> <span class="nm">topicos</span><div class="progress-line"><span class="progress-line__fill" data-inema-meter-fill=""></span></div></div></div>
-<div class="jstat"><div class="k">No curso</div><div class="v" data-inema-meter="curso"><span data-inema-meter-frac=""><strong>0</strong> de 27</span> <span class="nm">percorrido</span><div class="progress-line"><span class="progress-line__fill" data-inema-meter-fill=""></span></div></div></div>
+<div class="jstat"><div class="k">Neste modulo</div><div class="v" data-ARCKHÉ-meter="modulo:2-1"><span data-ARCKHÉ-meter-frac=""><strong>0</strong> de 3</span> <span class="nm">secoes lidas</span><div class="progress-line"><span class="progress-line__fill" data-ARCKHÉ-meter-fill=""></span></div></div></div>
+<div class="jstat"><div class="k">Na trilha 2</div><div class="v" data-ARCKHÉ-meter="trilha:2"><span data-ARCKHÉ-meter-frac=""><strong>0</strong> de 5</span> <span class="nm">topicos</span><div class="progress-line"><span class="progress-line__fill" data-ARCKHÉ-meter-fill=""></span></div></div></div>
+<div class="jstat"><div class="k">No curso</div><div class="v" data-ARCKHÉ-meter="curso"><span data-ARCKHÉ-meter-frac=""><strong>0</strong> de 27</span> <span class="nm">percorrido</span><div class="progress-line"><span class="progress-line__fill" data-ARCKHÉ-meter-fill=""></span></div></div></div>
 </div>
 </section>
 <div class="nextup"><div class="txt"><div class="k">Continuar</div><div class="t">Modulo 2-2 — Como aprendemos</div></div><a class="go" href="t2-2.html">Proximo →</a></div>
@@ -442,7 +442,7 @@
 </ol>
 <a class="rail-modules__index" href="t2.html">Indice da trilha →</a>
 </nav>
-<aside data-inema-rail="modulo-2-1#topico-1"></aside>
+<aside data-ARCKHÉ-rail="modulo-2-1#topico-1"></aside>
 <aside class="sidenote" data-kind="definicao">
 <div class="tag">Definicao</div>
 <b>Efeito Dunning-Kruger.</b> Tendencia de quem sabe pouco a superestimar a propria competencia —
@@ -454,7 +454,7 @@
           nao sabe — e e o que corrige tanto o excesso quanto a falta de confianca.
         </aside>
 <!-- ---- SECAO 2 ---- -->
-<aside data-inema-rail="modulo-2-1#topico-2"></aside>
+<aside data-ARCKHÉ-rail="modulo-2-1#topico-2"></aside>
 <aside class="sidenote" data-kind="definicao">
 <div class="tag">Definicao</div>
 <b>Reenquadramento.</b> Mudar a moldura de uma situacao sem mudar o fato. O mesmo gesto vira
@@ -466,7 +466,7 @@
           parar o choque nao deprime. A sensacao de escolha pesa mais que a realidade.
         </aside>
 <!-- ---- SECAO 3 ---- -->
-<aside data-inema-rail="modulo-2-1#topico-3"></aside>
+<aside data-ARCKHÉ-rail="modulo-2-1#topico-3"></aside>
 <aside class="sidenote" data-kind="definicao">
 <div class="tag">Definicao</div>
 <b>Inconsciente coletivo.</b> Conceito de Jung: uma camada psiquica comum a toda a humanidade, onde
@@ -480,10 +480,10 @@
 <!-- ---- SECAO 4 ---- -->
 </aside>
 </div></main>
-<footer class="colophon"><span>INEMA.CLUB · Caderno do aluno</span><span class="pg">Modulo 2-1</span><span>Composto em Spectral &amp; Source Serif 4</span></footer>
+<footer class="colophon"><span>ARCKHÉ AI · Caderno do aluno</span><span class="pg">Modulo 2-1</span><span>Composto em Spectral &amp; Source Serif 4</span></footer>
 <script src="./assets/learn.js"></script>
 <script>
-    if (window.INEMA && typeof window.INEMA.init === "function") { window.INEMA.init(); }
+    if (window.ARCKHÉ && typeof window.ARCKHÉ.init === "function") { window.ARCKHÉ.init(); }
   </script>
 </body>
 </html>

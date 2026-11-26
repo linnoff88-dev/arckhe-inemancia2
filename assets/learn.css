@@ -1,5 +1,5 @@
 /* =============================================================================
-   INEMA · formato-curso-v3 · learn.css
+   ARCKHÉ · formato-curso-v3 · learn.css
    SIMPLICIDADE RADICAL + CONTEUDO PROFUNDO — reading-mode como DEFAULT.
 
    Formaliza o prototipo mockups/v3-prototipo.html e implementa o V3-DESIGN.md.
@@ -13,17 +13,17 @@
    --------------------------------------------------------------------------
    CONTRATO CSS x JS (learn.js) — os nomes DEVEM casar:
      - Layout:   .reading (coluna 62-70ch) + .margin-rail (trilho direito)
-     - Secao:    <section data-inema-topic data-inema-module data-inema-track>
+     - Secao:    <section data-ARCKHÉ-topic data-ARCKHÉ-module data-ARCKHÉ-track>
      - Sidenote: <aside class="sidenote" data-kind="definicao|fonte|fundo">
                  ancorada por <a class="sidenote-ref">; colapso mobile sem JS.
-     - Painel do aluno: <aside data-inema-rail="modulo-X-Y#topico-N"> (o learn.js
+     - Painel do aluno: <aside data-ARCKHÉ-rail="modulo-X-Y#topico-N"> (o learn.js
                  injeta read-toggle/doubt-toggle/lista de grifos AQUI).
-     - Lido:     [data-inema-read-toggle][aria-pressed]
-     - Duvida:   [data-inema-doubt-toggle][aria-pressed]
+     - Lido:     [data-ARCKHÉ-read-toggle][aria-pressed]
+     - Duvida:   [data-ARCKHÉ-doubt-toggle][aria-pressed]
      - Grifo:    <mark class="hl" data-hl="..."> (+ popover de selecao)
-     - Bloco:    [data-inema-block]
-     - Progresso: [data-inema-meter="curso|trilha:N|modulo:X-Y"] + .progress-line
-     - Jornada:  [data-inema-journey-open] + painel .journey
+     - Bloco:    [data-ARCKHÉ-block]
+     - Progresso: [data-ARCKHÉ-meter="curso|trilha:N|modulo:X-Y"] + .progress-line
+     - Jornada:  [data-ARCKHÉ-journey-open] + painel .journey
      - Fundo:    <details class="go-deeper">
    --------------------------------------------------------------------------
    TOKENS SEMANTICOS (nivel que a pagina consome):
@@ -238,9 +238,9 @@ html[data-theme="escuro"] ::selection { background: var(--accent); color: var(--
 
 /* scroll-margin em TODO alvo de ancora (nav sticky obscurece foco — WCAG 2.4.11) */
 :where([id]),
-:where([data-inema-topic]),
-:where([data-inema-block]),
-:where([data-inema-module]) { scroll-margin-top: calc(var(--reader-h) + var(--s5)); }
+:where([data-ARCKHÉ-topic]),
+:where([data-ARCKHÉ-block]),
+:where([data-ARCKHÉ-module]) { scroll-margin-top: calc(var(--reader-h) + var(--s5)); }
 
 /* links: sublinhado discreto que basta; NAO muda de cor no hover (so o filete) */
 a {
@@ -467,12 +467,12 @@ img, svg { max-width: 100%; }
 
 /* =============================================================================
    8. SECTION — uma ideia por tela; cada secao RESPIRA (~96px)
-   <section data-inema-topic data-inema-module data-inema-track>
+   <section data-ARCKHÉ-topic data-ARCKHÉ-module data-ARCKHÉ-track>
    ============================================================================= */
 
-.section, section[data-inema-topic] { scroll-margin-top: calc(var(--reader-h) + var(--s5)); }
+.section, section[data-ARCKHÉ-topic] { scroll-margin-top: calc(var(--reader-h) + var(--s5)); }
 .section + .section,
-section[data-inema-topic] + section[data-inema-topic] { margin-top: var(--s9); }
+section[data-ARCKHÉ-topic] + section[data-ARCKHÉ-topic] { margin-top: var(--s9); }
 
 .section-mark {
   display: flex; align-items: baseline; gap: var(--s3); margin: 0 0 var(--s2);
@@ -611,7 +611,7 @@ html[data-theme="escuro"] mark.hl[data-hl="yellow"] { background: oklch(0.905 0.
 
 /* nota anexa ao grifo: pip discreto depois do span (NAO seta perto de topico) */
 mark.hl[data-has-note="true"]::after,
-mark.hl[data-inema-hasnote="1"]::after {
+mark.hl[data-ARCKHÉ-hasnote="1"]::after {
   content: ""; display: inline-block; width: 0.42em; height: 0.42em;
   margin-inline-start: 0.15em; border-radius: 50%; background: var(--accent);
   vertical-align: super; font-size: 0.7em;
@@ -786,12 +786,12 @@ mark.hl[data-inema-hasnote="1"]::after {
 
 
 /* =============================================================================
-   16. PAINEL DO ALUNO POR SECAO — <aside data-inema-rail="...">
+   16. PAINEL DO ALUNO POR SECAO — <aside data-ARCKHÉ-rail="...">
    O learn.js injeta AQUI: marcar lida, tenho duvida, lista de grifos/notas.
    Aqui esta o estilo dos hooks que o JS cria/alterna.
    ============================================================================= */
 
-[data-inema-rail] {
+[data-ARCKHÉ-rail] {
   margin: 0 0 var(--s6); display: block;
 }
 
@@ -826,10 +826,10 @@ mark.hl[data-inema-hasnote="1"]::after {
   text-transform: uppercase; color: var(--text-faint); margin-bottom: var(--s3);
 }
 
-/* ---- MARCAR COMO LIDA — [data-inema-read-toggle] (aria-pressed) ----
+/* ---- MARCAR COMO LIDA — [data-ARCKHÉ-read-toggle] (aria-pressed) ----
    #1 (erro critico): justify-content flex-start, NUNCA center. */
 .read-toggle,
-[data-inema-read-toggle] {
+[data-ARCKHÉ-read-toggle] {
   display: flex; align-items: center; justify-content: flex-start; gap: 11px;
   width: 100%; text-align: left; cursor: pointer;
   background: transparent; border: 0; padding: 0; margin: 0;
@@ -848,13 +848,13 @@ mark.hl[data-inema-hasnote="1"]::after {
   transition: stroke-dashoffset var(--dur-slow) var(--ease) 0.05s;
 }
 .read-toggle[aria-pressed="true"] .read-box,
-[data-inema-read-toggle][aria-pressed="true"] .read-box,
-[data-inema-read-toggle].is-read .read-box {
+[data-ARCKHÉ-read-toggle][aria-pressed="true"] .read-box,
+[data-ARCKHÉ-read-toggle].is-read .read-box {
   background: var(--accent); border-color: var(--accent);
 }
 .read-toggle[aria-pressed="true"] .read-box svg,
-[data-inema-read-toggle][aria-pressed="true"] .read-box svg,
-[data-inema-read-toggle].is-read .read-box svg { stroke-dashoffset: 0; }
+[data-ARCKHÉ-read-toggle][aria-pressed="true"] .read-box svg,
+[data-ARCKHÉ-read-toggle].is-read .read-box svg { stroke-dashoffset: 0; }
 
 .read-txt b {
   font-weight: 600; display: block; font-family: var(--font-disp);
@@ -862,34 +862,34 @@ mark.hl[data-inema-hasnote="1"]::after {
 }
 .read-sub { font-size: 0.78rem; color: var(--text-faint); font-family: var(--mono); }
 /* slots de label (forma com 2 textos, JS revela o certo) */
-[data-inema-read-toggle] .inema-label-done,
-[data-inema-read-toggle] .inema-ico-done { display: none; }
-[data-inema-read-toggle][aria-pressed="true"] .inema-label-todo,
-[data-inema-read-toggle].is-read .inema-label-todo,
-[data-inema-read-toggle][aria-pressed="true"] .inema-ico-todo,
-[data-inema-read-toggle].is-read .inema-ico-todo { display: none; }
-[data-inema-read-toggle][aria-pressed="true"] .inema-label-done,
-[data-inema-read-toggle].is-read .inema-label-done { display: inline; }
-[data-inema-read-toggle][aria-pressed="true"] .inema-ico-done,
-[data-inema-read-toggle].is-read .inema-ico-done { display: inline-flex; }
+[data-ARCKHÉ-read-toggle] .ARCKHÉ-label-done,
+[data-ARCKHÉ-read-toggle] .ARCKHÉ-ico-done { display: none; }
+[data-ARCKHÉ-read-toggle][aria-pressed="true"] .ARCKHÉ-label-todo,
+[data-ARCKHÉ-read-toggle].is-read .ARCKHÉ-label-todo,
+[data-ARCKHÉ-read-toggle][aria-pressed="true"] .ARCKHÉ-ico-todo,
+[data-ARCKHÉ-read-toggle].is-read .ARCKHÉ-ico-todo { display: none; }
+[data-ARCKHÉ-read-toggle][aria-pressed="true"] .ARCKHÉ-label-done,
+[data-ARCKHÉ-read-toggle].is-read .ARCKHÉ-label-done { display: inline; }
+[data-ARCKHÉ-read-toggle][aria-pressed="true"] .ARCKHÉ-ico-done,
+[data-ARCKHÉ-read-toggle].is-read .ARCKHÉ-ico-done { display: inline-flex; }
 
-/* ---- TENHO UMA DUVIDA — [data-inema-doubt-toggle] (aria-pressed) ---- */
+/* ---- TENHO UMA DUVIDA — [data-ARCKHÉ-doubt-toggle] (aria-pressed) ---- */
 .doubt-btn,
-[data-inema-doubt-toggle] {
+[data-ARCKHÉ-doubt-toggle] {
   display: flex; align-items: center; justify-content: flex-start; gap: 10px;
   width: 100%; margin-top: 11px; padding: 9px 11px;
   background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius-sm);
   font-family: var(--font-body); font-size: 0.92rem; color: var(--mark); cursor: pointer;
   transition: border-color var(--dur) var(--ease), background var(--dur) var(--ease);
 }
-.doubt-btn:hover, [data-inema-doubt-toggle]:hover { border-color: var(--mark-soft); }
+.doubt-btn:hover, [data-ARCKHÉ-doubt-toggle]:hover { border-color: var(--mark-soft); }
 .doubt-btn[aria-pressed="true"],
-[data-inema-doubt-toggle][aria-pressed="true"],
-[data-inema-doubt-toggle].is-doubt {
+[data-ARCKHÉ-doubt-toggle][aria-pressed="true"],
+[data-ARCKHÉ-doubt-toggle].is-doubt {
   border-color: var(--mark-soft);
   background: color-mix(in oklch, var(--mark) 8%, var(--bg));
 }
-[data-inema-doubt-toggle][data-resolved="true"] { opacity: 0.7; text-decoration: line-through; }
+[data-ARCKHÉ-doubt-toggle][data-resolved="true"] { opacity: 0.7; text-decoration: line-through; }
 .doubt-btn .q {
   flex: 0 0 auto; width: 20px; height: 20px; border: 1px solid var(--mark-soft);
   border-radius: 50%; display: grid; place-items: center;
@@ -913,7 +913,7 @@ mark.hl[data-inema-hasnote="1"]::after {
    Posicionado pelo learn.js; aqui so o visual. Estado aberto via [data-open].
    ============================================================================= */
 
-.selpop, [data-inema-selpop] {
+.selpop, [data-ARCKHÉ-selpop] {
   position: absolute; z-index: 90;
   display: flex; align-items: center; gap: 0.35rem;
   padding: 0.4rem 0.5rem;
@@ -922,64 +922,64 @@ mark.hl[data-inema-hasnote="1"]::after {
   opacity: 0; transform: translateY(2px); pointer-events: none;
   transition: opacity var(--dur-fast) var(--ease), transform var(--dur-fast) var(--ease);
 }
-.selpop[data-open="true"], [data-inema-selpop][data-open="true"] {
+.selpop[data-open="true"], [data-ARCKHÉ-selpop][data-open="true"] {
   opacity: 1; transform: translateY(0); pointer-events: auto;
 }
-.swatch, [data-inema-swatch] {
+.swatch, [data-ARCKHÉ-swatch] {
   inline-size: 1.3rem; block-size: 1.3rem; padding: 0;
   border-radius: 50%; border: 1.5px solid var(--border); cursor: pointer;
 }
-[data-inema-swatch][data-hl="amarelo"], [data-inema-swatch][data-hl="yellow"] { background: oklch(0.905 0.105 100); }
-[data-inema-swatch][data-hl="verde"],   [data-inema-swatch][data-hl="green"]  { background: oklch(0.620 0.110 150); }
-[data-inema-swatch][data-hl="azul"],    [data-inema-swatch][data-hl="blue"]   { background: var(--accent); }
-[data-inema-swatch][data-hl="rosa"],    [data-inema-swatch][data-hl="pink"]   { background: oklch(0.640 0.110 360); }
-[data-inema-swatch][data-hl="duvida"],  [data-inema-swatch][data-hl="doubt"]  {
+[data-ARCKHÉ-swatch][data-hl="amarelo"], [data-ARCKHÉ-swatch][data-hl="yellow"] { background: oklch(0.905 0.105 100); }
+[data-ARCKHÉ-swatch][data-hl="verde"],   [data-ARCKHÉ-swatch][data-hl="green"]  { background: oklch(0.620 0.110 150); }
+[data-ARCKHÉ-swatch][data-hl="azul"],    [data-ARCKHÉ-swatch][data-hl="blue"]   { background: var(--accent); }
+[data-ARCKHÉ-swatch][data-hl="rosa"],    [data-ARCKHÉ-swatch][data-hl="pink"]   { background: oklch(0.640 0.110 360); }
+[data-ARCKHÉ-swatch][data-hl="duvida"],  [data-ARCKHÉ-swatch][data-hl="doubt"]  {
   background: var(--mark); box-shadow: 0 0 0 2px var(--surface), 0 0 0 3px var(--mark-soft);
 }
-[data-inema-swatch][aria-pressed="true"], [data-inema-swatch].is-active {
+[data-ARCKHÉ-swatch][aria-pressed="true"], [data-ARCKHÉ-swatch].is-active {
   border-color: var(--text); transform: scale(1.08);
 }
 .selpop__sep { inline-size: 1px; block-size: 1.2rem; background: var(--border); }
-.selpop__action, [data-inema-act] {
+.selpop__action, [data-ARCKHÉ-act] {
   display: inline-flex; align-items: center; gap: 0.3rem;
   padding: 0.3rem 0.55rem; font-family: var(--mono); font-size: 0.74rem;
   letter-spacing: 0.04em; color: var(--text); background: transparent;
   border: 0; border-radius: var(--radius-sm); cursor: pointer;
 }
-.selpop__action:hover, [data-inema-act]:hover { background: var(--surface-2); }
+.selpop__action:hover, [data-ARCKHÉ-act]:hover { background: var(--surface-2); }
 
 
 /* =============================================================================
    18. PROGRESSO — marcador fino "N de M" + .progress-line (NUNCA 3 barras)
-   [data-inema-meter="curso|trilha:N|modulo:X-Y"]. O learn.js escreve --inema-pct
+   [data-ARCKHÉ-meter="curso|trilha:N|modulo:X-Y"]. O learn.js escreve --ARCKHÉ-pct
    (0..100) + ARIA (role=progressbar, aria-valuetext="N de M (P%)").
    ============================================================================= */
 
-[data-inema-meter] {
-  --inema-pct: 0;
+[data-ARCKHÉ-meter] {
+  --ARCKHÉ-pct: 0;
   display: inline-flex; align-items: center; gap: var(--s3);
   font-family: var(--mono); font-size: 0.78rem; letter-spacing: 0.04em;
   color: var(--text-faint);
 }
 /* o "N de M" (marcador silencioso, discreto) */
-[data-inema-meter-frac] { color: var(--text-muted); white-space: nowrap; }
-[data-inema-meter-frac] strong { color: var(--text); font-weight: 600; }
-[data-inema-meter-pct]  { color: var(--text-faint); white-space: nowrap; }
+[data-ARCKHÉ-meter-frac] { color: var(--text-muted); white-space: nowrap; }
+[data-ARCKHÉ-meter-frac] strong { color: var(--text); font-weight: 600; }
+[data-ARCKHÉ-meter-pct]  { color: var(--text-faint); white-space: nowrap; }
 
 /* UMA linha fina (NAO barra grossa, NAO 3 lado a lado) */
 .progress-line {
   position: relative; flex: 1 1 auto; min-width: 80px;
   block-size: 2px; background: var(--border-soft); border-radius: 2px; overflow: hidden;
 }
-.progress-line__fill, [data-inema-meter-fill] {
+.progress-line__fill, [data-ARCKHÉ-meter-fill] {
   display: block; block-size: 100%;
-  inline-size: calc(var(--inema-pct, 0) * 1%);
+  inline-size: calc(var(--ARCKHÉ-pct, 0) * 1%);
   background: var(--accent);
   transition: inline-size var(--dur-slow) var(--ease);
 }
 /* 100% — celebracao CONTIDA (sem confete, sem streak) */
-[data-inema-meter][data-complete="true"] .progress-line__fill,
-[data-inema-meter][data-complete="true"] [data-inema-meter-fill] { background: var(--accent-soft); }
+[data-ARCKHÉ-meter][data-complete="true"] .progress-line__fill,
+[data-ARCKHÉ-meter][data-complete="true"] [data-ARCKHÉ-meter-fill] { background: var(--accent-soft); }
 
 
 /* =============================================================================
@@ -1009,44 +1009,44 @@ mark.hl[data-inema-hasnote="1"]::after {
 .q-item .ans p { margin: var(--s4) 0 0; }
 
 /* checagem leve opcional declarada via learn.js (feedback NAO-bloqueante) */
-[data-inema-check] {
+[data-ARCKHÉ-check] {
   margin: var(--s6) 0 0; padding: var(--s4) var(--s5);
   background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
 }
-.inema-check__q { font-weight: 600; color: var(--text); margin-bottom: var(--s3); }
-.inema-check__options { display: flex; flex-direction: column; gap: var(--s2); }
-.inema-check__option {
+.ARCKHÉ-check__q { font-weight: 600; color: var(--text); margin-bottom: var(--s3); }
+.ARCKHÉ-check__options { display: flex; flex-direction: column; gap: var(--s2); }
+.ARCKHÉ-check__option {
   display: flex; align-items: flex-start; gap: var(--s2); text-align: left;
   padding: 0.6rem 0.75rem; font: inherit; font-size: 0.92rem; color: var(--text);
   background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius-sm); cursor: pointer;
 }
-.inema-check__option:hover { border-color: var(--accent); }
-.inema-check__option[data-state="correct"] { border-color: var(--ok); background: color-mix(in oklch, var(--ok) 12%, var(--bg)); }
-.inema-check__option[data-state="wrong"]   { border-color: var(--warn); background: color-mix(in oklch, var(--warn) 10%, var(--bg)); }
-.inema-check__feedback { margin-top: var(--s3); font-size: 0.88rem; color: var(--text-muted); }
-.inema-check__feedback[data-tone="correct"] { color: var(--ok); }
+.ARCKHÉ-check__option:hover { border-color: var(--accent); }
+.ARCKHÉ-check__option[data-state="correct"] { border-color: var(--ok); background: color-mix(in oklch, var(--ok) 12%, var(--bg)); }
+.ARCKHÉ-check__option[data-state="wrong"]   { border-color: var(--warn); background: color-mix(in oklch, var(--warn) 10%, var(--bg)); }
+.ARCKHÉ-check__feedback { margin-top: var(--s3); font-size: 0.88rem; color: var(--text-muted); }
+.ARCKHÉ-check__feedback[data-tone="correct"] { color: var(--ok); }
 
 
 /* =============================================================================
-   20. MINHA JORNADA — entrada [data-inema-journey-open] + painel .journey
+   20. MINHA JORNADA — entrada [data-ARCKHÉ-journey-open] + painel .journey
    Sem barras; grade silenciosa de quadradinhos. O learn.js abre como dialog.
    ============================================================================= */
 
-[data-inema-journey-open] {
+[data-ARCKHÉ-journey-open] {
   display: inline-flex; align-items: center; gap: var(--s2);
   font-family: var(--mono); font-size: 0.7rem; letter-spacing: 0.14em; text-transform: uppercase;
   color: var(--accent); background: transparent; border: 1px solid var(--accent);
   border-radius: var(--radius-sm); padding: 8px 14px; cursor: pointer;
   transition: background var(--dur) var(--ease), color var(--dur) var(--ease);
 }
-[data-inema-journey-open]:hover { background: var(--accent); color: var(--on-accent); }
-.inema-journey-badge {
+[data-ARCKHÉ-journey-open]:hover { background: var(--accent); color: var(--on-accent); }
+.ARCKHÉ-journey-badge {
   display: inline-flex; align-items: center; justify-content: center;
   min-inline-size: 1.2rem; block-size: 1.2rem; padding: 0 0.35rem;
   font-family: var(--mono); font-size: 0.66rem; font-weight: 600; line-height: 1;
   color: var(--on-accent); background: var(--accent); border-radius: 999px;
 }
-.inema-journey-badge[data-count="0"] { display: none; }
+.ARCKHÉ-journey-badge[data-count="0"] { display: none; }
 
 /* painel consolidado embutido na pagina (lidos/duvidas/notas) */
 .journey {
@@ -1086,20 +1086,20 @@ mark.hl[data-inema-hasnote="1"]::after {
 .jgrid i.cur { border-color: var(--accent); background: var(--accent); box-shadow: inset 0 0 0 2px var(--surface-2); }
 
 /* ---- painel da jornada como overlay (quando o learn.js abre como dialog) ---- */
-.inema-journey-backdrop {
+.ARCKHÉ-journey-backdrop {
   position: fixed; inset: 0; z-index: 80; background: oklch(0.255 0.012 70 / 0.5);
   opacity: 0; pointer-events: none; transition: opacity var(--dur) var(--ease);
 }
-.inema-journey-backdrop[data-open="true"] { opacity: 1; pointer-events: auto; }
-.inema-journey-overlay, .inema-journey {
+.ARCKHÉ-journey-backdrop[data-open="true"] { opacity: 1; pointer-events: auto; }
+.ARCKHÉ-journey-overlay, .ARCKHÉ-journey {
   position: fixed; z-index: 81; inset-block: 0; inset-inline-end: 0;
   inline-size: min(30rem, 100%); display: flex; flex-direction: column;
   background: var(--bg); border-inline-start: 1px solid var(--border);
   box-shadow: -12px 0 40px oklch(0.255 0.012 70 / 0.28); color: var(--text);
   transform: translateX(100%); transition: transform var(--dur-slow) var(--ease);
 }
-.inema-journey-overlay[data-open="true"], .inema-journey[data-open="true"] { transform: translateX(0); }
-@media (max-width: 640px) { .inema-journey-overlay, .inema-journey { inline-size: 100%; border-inline-start: none; } }
+.ARCKHÉ-journey-overlay[data-open="true"], .ARCKHÉ-journey[data-open="true"] { transform: translateX(0); }
+@media (max-width: 640px) { .ARCKHÉ-journey-overlay, .ARCKHÉ-journey { inline-size: 100%; border-inline-start: none; } }
 
 
 /* =============================================================================
@@ -1136,7 +1136,7 @@ mark.hl[data-inema-hasnote="1"]::after {
 
 /* =============================================================================
    22. RESPONSIVO — mobile: o trilho desmonta; sidenote COLAPSA INLINE (sem JS)
-   A .sidenote/.note-hand/.control/[data-inema-rail] entram no fluxo, abaixo do
+   A .sidenote/.note-hand/.control/[data-ARCKHÉ-rail] entram no fluxo, abaixo do
    paragrafo, como bloco calmo com filete lateral.
    ============================================================================= */
 
@@ -1155,7 +1155,7 @@ mark.hl[data-inema-hasnote="1"]::after {
   .jstat:last-child { border-bottom: 0; }
 
   /* sidenote/controle viram bloco inline calmo abaixo do texto */
-  .sidenote, .note-hand, .control, [data-inema-rail] {
+  .sidenote, .note-hand, .control, [data-ARCKHÉ-rail] {
     max-width: var(--measure); border-left: 2px solid var(--border);
     padding-left: var(--s4); margin-left: 0;
   }
@@ -1195,12 +1195,12 @@ html[data-reduced-motion="reduce"] *::after {
 
 /* alto contraste do SO: bordas solidas, foco visivel garantido */
 @media (forced-colors: active) {
-  .control, .go-deeper, .journey, [data-inema-rail], .selpop,
-  [data-inema-read-toggle], [data-inema-doubt-toggle], [data-inema-journey-open] {
+  .control, .go-deeper, .journey, [data-ARCKHÉ-rail], .selpop,
+  [data-ARCKHÉ-read-toggle], [data-ARCKHÉ-doubt-toggle], [data-ARCKHÉ-journey-open] {
     border: 1px solid CanvasText;
   }
   :focus-visible { outline: 2px solid Highlight; }
-  .progress-line__fill, [data-inema-meter-fill] { forced-color-adjust: none; }
+  .progress-line__fill, [data-ARCKHÉ-meter-fill] { forced-color-adjust: none; }
 }
 
 /* =============================================================================
@@ -1212,7 +1212,7 @@ html[data-reduced-motion="reduce"] *::after {
    ============================================================================= */
 
 /* =============================================================================
-   ADENDO INEMA.NCIA — menu de trilhas (navegacao global) + sumario da landing.
+   ADENDO ARCKHÉ.NCIA — menu de trilhas (navegacao global) + sumario da landing.
    Usa apenas tokens v3 existentes (acento unico, hairlines, mono).
    ============================================================================= */
 .course-nav{

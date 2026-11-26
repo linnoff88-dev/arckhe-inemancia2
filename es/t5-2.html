@@ -6,10 +6,10 @@
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <!-- ===================================================================
        1) ANTI-FOUC — script BLOQUEANTE, PRIMEIRO no <head>, ANTES das fontes
-          e do learn.css. Le inema.prefs (global, cross-curso) e aplica
+          e do learn.css. Le ARCKHÉ.prefs (global, cross-curso) e aplica
           data-theme + color-scheme + --measure/--leading/--fontscale +
           data-font/--font-disp/--font-body ANTES do primeiro paint.
-          try/catch total => default papel no erro (preserva a marca INEMA).
+          try/catch total => default papel no erro (preserva a marca ARCKHÉ).
        =================================================================== -->
 <script>
   (function () {
@@ -19,7 +19,7 @@
       function clone(o) { var r = {}; for (var x in o) r[x] = o[x]; return r; }
       var p = clone(DEF);
       try {
-        var raw = localStorage.getItem('inema.prefs');
+        var raw = localStorage.getItem('ARCKHÉ.prefs');
         if (raw) {
           var parsed = JSON.parse(raw);
           if (parsed && typeof parsed === 'object') {
@@ -74,10 +74,10 @@
     }
   })();
   </script>
-<meta content="inema-ncia" name="inema-course"/>
-<script data-inema-manifest="" type="application/json">
+<meta content="ARCKHÉ-ncia" name="ARCKHÉ-course"/>
+<script data-ARCKHÉ-manifest="" type="application/json">
 {
-  "course": "inema-ncia",
+  "course": "ARCKHÉ-ncia",
   "tracks": [
     {
       "n": "1",
@@ -178,49 +178,49 @@
   ]
 }
   </script>
-<title>Módulo 5-2 — Aplicación | INEMA.NCIA</title>
+<title>Módulo 5-2 — Aplicación | ARCKHÉ.NCIA</title>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&amp;family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400;1,8..60,500&amp;family=IBM+Plex+Mono:wght@400;500&amp;family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet"/>
 <link href="../assets/learn.css" rel="stylesheet"/>
-<link href="https://inematds.github.io/inemancia2/t5-2.html" hreflang="pt-BR" rel="alternate"/><link href="https://inematds.github.io/inemancia2/en/t5-2.html" hreflang="en" rel="alternate"/><link href="https://inematds.github.io/inemancia2/es/t5-2.html" hreflang="es" rel="alternate"/></head>
-<body><div class="inema-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../t5-2.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="../en/t5-2.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="t5-2.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">ES</a></div>
+<link href="https://linnoff88-dev.github.io/arckhe-/t5-2.html" hreflang="pt-BR" rel="alternate"/><link href="https://linnoff88-dev.github.io/arckhe-/en/t5-2.html" hreflang="en" rel="alternate"/><link href="https://linnoff88-dev.github.io/arckhe-/es/t5-2.html" hreflang="es" rel="alternate"/></head>
+<body><div class="ARCKHÉ-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../t5-2.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="../en/t5-2.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="t5-2.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">ES</a></div>
 <a class="skip" href="#reading">Saltar al contenido</a>
 <div class="reader-bar">
 <div class="reader-inner">
-<a class="wordmark" href="https://inema.club" rel="noopener" target="_blank">INEMA<span class="dot">.</span><span class="club">CLUB</span></a>
-<div class="reader-controls" data-inema-appearance="">
-<span class="rc-read"><span data-inema-meter="modulo:5-2"><span data-inema-meter-frac=""><strong>0</strong> de 3</span></span> leídas</span>
+<a class="wordmark" href="https://ARCKHÉ AI" rel="noopener" target="_blank">ARCKHÉ<span class="dot">.</span><span class="club">CLUB</span></a>
+<div class="reader-controls" data-ARCKHÉ-appearance="">
+<span class="rc-read"><span data-ARCKHÉ-meter="modulo:5-2"><span data-ARCKHÉ-meter-frac=""><strong>0</strong> de 3</span></span> leídas</span>
 <div aria-label="Tema de lectura" class="rc-group" role="group">
-<button aria-pressed="true" class="rc-btn" data-inema-set-theme="papel" type="button">Papel</button>
-<button aria-pressed="false" class="rc-btn" data-inema-set-theme="sepia" type="button">Sepia</button>
-<button aria-pressed="false" class="rc-btn" data-inema-set-theme="escuro" type="button">Oscuro</button>
+<button aria-pressed="true" class="rc-btn" data-ARCKHÉ-set-theme="papel" type="button">Papel</button>
+<button aria-pressed="false" class="rc-btn" data-ARCKHÉ-set-theme="sepia" type="button">Sepia</button>
+<button aria-pressed="false" class="rc-btn" data-ARCKHÉ-set-theme="escuro" type="button">Oscuro</button>
 </div>
 <div aria-label="Fuente de lectura" class="rc-group" role="group">
-<button aria-pressed="true" class="rc-btn" data-inema-set-font="serif" type="button">Serif</button>
-<button aria-pressed="false" class="rc-btn" data-inema-set-font="sans" type="button">Sans</button>
-<button aria-pressed="false" class="rc-btn" data-inema-set-font="hyperlegible" title="Atkinson Hyperlegible" type="button">Aa↹</button>
+<button aria-pressed="true" class="rc-btn" data-ARCKHÉ-set-font="serif" type="button">Serif</button>
+<button aria-pressed="false" class="rc-btn" data-ARCKHÉ-set-font="sans" type="button">Sans</button>
+<button aria-pressed="false" class="rc-btn" data-ARCKHÉ-set-font="hyperlegible" title="Atkinson Hyperlegible" type="button">Aa↹</button>
 </div>
 <div aria-label="Tamaño del texto" class="rc-group" role="group">
-<button aria-pressed="true" class="rc-btn" data-inema-set-fontscale="100" type="button">A</button>
-<button aria-pressed="false" class="rc-btn" data-inema-set-fontscale="112" type="button">A+</button>
-<button aria-pressed="false" class="rc-btn" data-inema-set-fontscale="125" type="button">A++</button>
+<button aria-pressed="true" class="rc-btn" data-ARCKHÉ-set-fontscale="100" type="button">A</button>
+<button aria-pressed="false" class="rc-btn" data-ARCKHÉ-set-fontscale="112" type="button">A+</button>
+<button aria-pressed="false" class="rc-btn" data-ARCKHÉ-set-fontscale="125" type="button">A++</button>
 </div>
 <div aria-label="Ancho de línea" class="rc-group" role="group">
-<button aria-pressed="false" class="rc-btn" data-inema-set-linewidth="62" type="button">Estrecho</button>
-<button aria-pressed="true" class="rc-btn" data-inema-set-linewidth="66" type="button">Medio</button>
-<button aria-pressed="false" class="rc-btn" data-inema-set-linewidth="70" type="button">Amplio</button>
+<button aria-pressed="false" class="rc-btn" data-ARCKHÉ-set-linewidth="62" type="button">Estrecho</button>
+<button aria-pressed="true" class="rc-btn" data-ARCKHÉ-set-linewidth="66" type="button">Medio</button>
+<button aria-pressed="false" class="rc-btn" data-ARCKHÉ-set-linewidth="70" type="button">Amplio</button>
 </div>
 </div>
 </div>
 </div>
 <header class="masthead">
 <nav aria-label="Dónde estás" class="wayfind">
-<span><a href="index.html" style="text-decoration:none">INEMA.NCIA</a></span><span class="sep">·</span>
+<span><a href="index.html" style="text-decoration:none">ARCKHÉ.NCIA</a></span><span class="sep">·</span>
 <span><a href="t5.html" style="text-decoration:none">Recorrido <b>5</b></a></span><span class="sep">·</span>
 <span>Módulo <b>5-2</b></span><span class="sep">·</span>
-<span data-inema-section-counter="">Sección 1 de 3</span><span class="sep">·</span>
-<button data-inema-journey-open="" type="button">Mi recorrido <span class="inema-journey-badge" data-count="0" data-inema-journey-badge="">0</span></button>
+<span data-ARCKHÉ-section-counter="">Sección 1 de 3</span><span class="sep">·</span>
+<button data-ARCKHÉ-journey-open="" type="button">Mi recorrido <span class="ARCKHÉ-journey-badge" data-count="0" data-ARCKHÉ-journey-badge="">0</span></button>
 </nav>
 <nav aria-label="Rutas del curso" class="course-nav" data-course-nav="">
 <a class="cn-home" href="index.html">Inicio</a>
@@ -235,12 +235,12 @@
 </header>
 <main class="spread"><div class="leaf">
 <article class="reading" id="reading">
-<p class="kicker">Módulo 5-2 · Ruta 5 · INEMA.NCIA</p>
+<p class="kicker">Módulo 5-2 · Ruta 5 · ARCKHÉ.NCIA</p>
 <h1 class="module">Aplicación</h1>
 <p class="deck">Del principio a la práctica: el método VIRALST en ventas, el modelo de gatillos en el ámbito digital y un estudio de caso.</p>
 <p class="read-meta"><span class="here">Leyendo ahora</span><span>3 secciones</span><span><a href="t5.html" style="color:inherit">← índice de la ruta</a></span></p>
 <section aria-label="Qué cubre este módulo" class="aims"><h2>Qué cubre este módulo</h2><ul><li>VIRALST en modo ventas</li><li>FGMD: los diez disparadores en el entorno digital</li><li>Estudio de caso: el proyecto NCIAFlux</li></ul></section>
-<nav aria-label="Resumen del módulo" class="toc" data-inema-toc="">
+<nav aria-label="Resumen del módulo" class="toc" data-ARCKHÉ-toc="">
 <p class="toc-head">Resumen del módulo</p>
 <ol>
 <li class="current"><span class="dot-now"></span><span class="n">1</span><a href="#topico-1"><span class="t">VIRALST en modo ventas</span></a></li>
@@ -248,25 +248,25 @@
 <li><span class="n">3</span><a href="#topico-3"><span class="t">Estudio de caso: el proyecto NCIAFlux</span></a><span class="leader"></span></li>
 </ol>
 </nav>
-<section data-inema-module="5-2" data-inema-topic="modulo-5-2#topico-1" data-inema-track="5" id="topico-1">
+<section data-ARCKHÉ-module="5-2" data-ARCKHÉ-topic="modulo-5-2#topico-1" data-ARCKHÉ-track="5" id="topico-1">
 <div class="section-mark">
 <span class="where">Sección 1 de 3</span><span>·</span><span>VIRALST ventas</span>
 </div>
 <h2 class="head"><span class="num">1.</span>VIRALST en modo ventas</h2>
 <div class="prose">
-<p class="lede" data-inema-block="m5-t3-p1">La misma estructura de cuatro golpes sirve para vender
+<p class="lede" data-ARCKHÉ-block="m5-t3-p1">La misma estructura de cuatro golpes sirve para vender
               — pero con un ajuste de tono. En vez de provocar reflexión, el modo ventas provoca
               <em>deseo, urgencia y acción</em>. El hook deja de ser solo curiosidad y se convierte en un gancho de dolor o de
               deseo inmediato. La identificación se convierte en empatía comercial: «esto resuelve mi problema».
               El conflicto muestra el obstáculo y el descubrimiento de la solución. Y el cierre suma al insight una llamada
               a la acción.<span class="sidenote-ref">4</span></p>
-<p data-inema-block="m5-t3-p2">Cada ajuste tiene una lógica neurocientífica sencilla: el gancho del dolor
+<p data-ARCKHÉ-block="m5-t3-p2">Cada ajuste tiene una lógica neurocientífica sencilla: el gancho del dolor
               activa la amígdala (atención y urgencia); la empatía práctica activa las neuronas espejo; el obstáculo
               seguido de la solución libera dopamina durante la búsqueda de una recompensa; y el insight con CTA refuerza la decisión.
               El secreto es mantener la emoción por encima de la lógica: frases cortas, ritmo de habla, sin jerga.</p>
 </div>
 <div class="prose">
-<p data-inema-block="m5-t3-p3">El prompt de abajo pone en práctica esta adaptación. Es el molde que genera
+<p data-ARCKHÉ-block="m5-t3-p3">El prompt de abajo pone en práctica esta adaptación. Es el molde que genera
               el guion listo para grabar, con título y variaciones del hook:</p>
 <div class="codeblock"><span class="c">[VIRALST SALES MODE ON]</span>
 
@@ -314,17 +314,17 @@ usando la técnica VIRALST adaptada para VENTAS, con 4 elementos:
 </details>
 </div>
 </section>
-<section data-inema-module="5-2" data-inema-topic="modulo-5-2#topico-2" data-inema-track="5" id="topico-2">
+<section data-ARCKHÉ-module="5-2" data-ARCKHÉ-topic="modulo-5-2#topico-2" data-ARCKHÉ-track="5" id="topico-2">
 <div class="section-mark">
 <span class="where">Sección 2 de 3</span><span>·</span><span>Disparadores (FGMD)</span>
 </div>
 <h2 class="head"><span class="num">2.</span>FGMD: los diez disparadores en el entorno digital</h2>
 <div class="prose">
-<p class="lede" data-inema-block="m5-t4-p1">Los cuatro tiempos de la historia viral se despliegan, en lo
+<p class="lede" data-ARCKHÉ-block="m5-t4-p1">Los cuatro tiempos de la historia viral se despliegan, en lo
               digital, en un mapa más detallado: el FGMD. La diferencia de organización es crucial: los detonantes aquí
               están ordenados <em>por función en el cerebro</em>, no por jerga de marketing. Cada uno responde una
               pregunta mental que se hace el espectador, en secuencia, desde el primer segundo hasta la acción final.</p>
-<p data-inema-block="m5-t4-p2">El orden es: <strong>atención</strong> (detenerse — “¿qué es
+<p data-ARCKHÉ-block="m5-t4-p2">El orden es: <strong>atención</strong> (detenerse — “¿qué es
               esto?”), <strong>retención</strong> (sostener — “¿hacia dónde va esto?”),
               <strong>comprensión</strong> (aclarar — “¿estoy entendiendo?”),
               <strong>identificación</strong> (conectar — “¿esto tiene que ver conmigo?”),
@@ -335,7 +335,7 @@ usando la técnica VIRALST adaptada para VENTAS, con 4 elementos:
               <strong>transformación</strong> (mostrar el camino — “¿puedo llegar hasta allí?”) y,
               solo entonces, <strong>CTA</strong> (mover — “¿qué hago ahora?”).<span class="sidenote-ref">5</span></p>
 <h3 class="sub">El gatillo más ignorado — y el que sostiene la autoridad</h3>
-<p data-inema-block="m5-t4-p3">La comprensión suele pasarse por alto, y es un error costoso: si la persona se
+<p data-ARCKHÉ-block="m5-t4-p3">La comprensión suele pasarse por alto, y es un error costoso: si la persona se
               siente tonta, se va — aunque tenga interés. Simplificar, usar metáforas, traducir la jerga,
               ofrecer un ejemplo concreto — eso es lo que construye autoridad real. Y fíjate dónde aparece el CTA:
               al final, después de despertar conciencia y mostrar un camino. Un CTA sólido no pide; continúa
@@ -371,28 +371,28 @@ TODOS los siguientes disparadores, respetando el orden cognitivo del cerebro:
 <p>También hay una versión corta de una sola línea, útil para una solicitud rápida: “crea un contenido
                 sobre [tema] aplicando, en orden, los diez detonantes, con un lenguaje humano, sin exageraciones y enfocado en
                 despertar conciencia”. El modelo de referencia está publicado en
-                <span style="white-space:nowrap">inematds.github.io/FGMD</span>.</p>
+                <span style="white-space:nowrap">linnoff88-dev.github.io/arckhe-FGMD</span>.</p>
 </div>
 </details>
 </section>
-<section data-inema-module="5-2" data-inema-topic="modulo-5-2#topico-3" data-inema-track="5" id="topico-3">
+<section data-ARCKHÉ-module="5-2" data-ARCKHÉ-topic="modulo-5-2#topico-3" data-ARCKHÉ-track="5" id="topico-3">
 <div class="section-mark">
 <span class="where">Sección 3 de 3</span><span>·</span><span>NCIAFlux</span>
 </div>
 <h2 class="head"><span class="num">3.</span>Estudio de caso: el proyecto NCIAFlux</h2>
 <div class="prose">
-<p class="lede" data-inema-block="m5-t5-p1">Toda la persuasión de este recorrido necesita algo para
+<p class="lede" data-ARCKHÉ-block="m5-t5-p1">Toda la persuasión de este recorrido necesita algo para
               persuadir <em>a favor</em>. NCIAFlux sirve como caso porque muestra cómo una promesa se vuelve lo bastante clara
               como para caber en una frase. Es un sistema de <em>NeuroFluxo</em> para personas con TDAH —
               el nombre combina NCIA (de neurociencia) con Flux (estado de flujo, adaptación, movimiento). El concepto
               explicado al usuario es simple: el flujo del cerebro en el día a día.<span class="sidenote-ref">6</span></p>
-<p data-inema-block="m5-t5-p2">La promesa cabe en una sola línea porque invierte la expectativa: “en
+<p data-ARCKHÉ-block="m5-t5-p2">La promesa cabe en una sola línea porque invierte la expectativa: “en
               NCIAFlux, tú no te adaptas al método — el método se adapta a tu NeuroFluxo”. En vez de
               exigir disciplina, el sistema entiende cómo funciona el cerebro de la persona, crea un plan posible y
               ajusta el flujo a medida que cambian la energía y la rutina. Es una promesa que no suena clínica, no suena
               productivista, tiene base científica — y es fácil de explicar en una frase.</p>
 <h3 class="sub">Tres fases y un diferencial que es casi todo emocional</h3>
-<p data-inema-block="m5-t5-p3">El producto se organiza en tres fases. La <strong>Descubrimiento</strong>
+<p data-ARCKHÉ-block="m5-t5-p3">El producto se organiza en tres fases. La <strong>Descubrimiento</strong>
               (cinco a siete minutos) hace preguntas sencillas y ofrece feedback inmediato, generando un perfil inicial
               — y el uso continuo es opcional. El <strong>Plan</strong> nace de este perfil: una prioridad por
               día, pocas tareas ligeras, rutinas condicionales. El <strong>Seguimiento</strong> y es amable —
@@ -422,18 +422,18 @@ TODOS los siguientes disparadores, respetando el orden cognitivo del cerebro:
                 entiende. Esta dupla resuelve un dilema común: los nombres descriptivos son claros, pero largos;
                 los nombres cortos son memorables, pero opacos. Usar ambos en capas ofrece lo mejor de los dos.</p>
 <p>El código y la evolución del proyecto están abiertos en el repositorio:
-                <a href="https://github.com/inematds/NCIAFlux">github.com/inematds/NCIAFlux</a>. Sirve como
+                <a href="https://github.com/linnoff88-dev/NCIAFlux">github.com/linnoff88-dev/NCIAFlux</a>. Sirve como
                 ejercicio cerrar aquí la ruta: toma NCIAFlux y escribe tú mismo un guion VIRALST en modo
                 ventas para él — usando los cinco disparadores de la Sección 1 y el orden del FGMD de la Sección 4.</p>
 </div>
 </details>
 </section>
 <section aria-label="Mi recorrido" class="journey">
-<div class="journey-top"><h2><span class="ico">❧</span> Mi recorrido</h2><button class="journey-cta" data-inema-journey-open="" type="button">Abrir el cuaderno →</button></div>
+<div class="journey-top"><h2><span class="ico">❧</span> Mi recorrido</h2><button class="journey-cta" data-ARCKHÉ-journey-open="" type="button">Abrir el cuaderno →</button></div>
 <div class="journey-body">
-<div class="jstat"><div class="k">En este módulo</div><div class="v" data-inema-meter="modulo:5-2"><span data-inema-meter-frac=""><strong>0</strong> de 3</span> <span class="nm">secciones leídas</span><div class="progress-line"><span class="progress-line__fill" data-inema-meter-fill=""></span></div></div></div>
-<div class="jstat"><div class="k">En la ruta 5</div><div class="v" data-inema-meter="trilha:5"><span data-inema-meter-frac=""><strong>0</strong> de 5</span> <span class="nm">temas</span><div class="progress-line"><span class="progress-line__fill" data-inema-meter-fill=""></span></div></div></div>
-<div class="jstat"><div class="k">En el curso</div><div class="v" data-inema-meter="curso"><span data-inema-meter-frac=""><strong>0</strong> de 27</span> <span class="nm">recorrido</span><div class="progress-line"><span class="progress-line__fill" data-inema-meter-fill=""></span></div></div></div>
+<div class="jstat"><div class="k">En este módulo</div><div class="v" data-ARCKHÉ-meter="modulo:5-2"><span data-ARCKHÉ-meter-frac=""><strong>0</strong> de 3</span> <span class="nm">secciones leídas</span><div class="progress-line"><span class="progress-line__fill" data-ARCKHÉ-meter-fill=""></span></div></div></div>
+<div class="jstat"><div class="k">En la ruta 5</div><div class="v" data-ARCKHÉ-meter="trilha:5"><span data-ARCKHÉ-meter-frac=""><strong>0</strong> de 5</span> <span class="nm">temas</span><div class="progress-line"><span class="progress-line__fill" data-ARCKHÉ-meter-fill=""></span></div></div></div>
+<div class="jstat"><div class="k">En el curso</div><div class="v" data-ARCKHÉ-meter="curso"><span data-ARCKHÉ-meter-frac=""><strong>0</strong> de 27</span> <span class="nm">recorrido</span><div class="progress-line"><span class="progress-line__fill" data-ARCKHÉ-meter-fill=""></span></div></div></div>
 </div>
 </section>
 <div class="nextup"><div class="txt"><div class="k">Continuar</div><div class="t">Ruta 6 — Recursos del Canal</div></div><a class="go" href="t6.html">Siguiente →</a></div>
@@ -447,7 +447,7 @@ TODOS los siguientes disparadores, respetando el orden cognitivo del cerebro:
 </ol>
 <a class="rail-modules__index" href="t5.html">Índice de la ruta →</a>
 </nav>
-<aside data-inema-rail="modulo-5-2#topico-1"></aside>
+<aside data-ARCKHÉ-rail="modulo-5-2#topico-1"></aside>
 <aside class="sidenote" data-kind="definicao">
 <div class="tag">Definición</div>
 <b>Empatía comercial.</b> La identificación ajustada para las ventas: no “esto tiene que ver conmigo”, sino
@@ -459,7 +459,7 @@ TODOS los siguientes disparadores, respetando el orden cognitivo del cerebro:
           original para uso directo.
         </aside>
 <!-- ---- SECAO 4 ---- -->
-<aside data-inema-rail="modulo-5-2#topico-2"></aside>
+<aside data-ARCKHÉ-rail="modulo-5-2#topico-2"></aside>
 <aside class="sidenote" data-kind="fundo">
 <div class="tag">Profundizando</div>
           La frase síntesis de FGMD: <i>el contenido contundente no lleva del clic a la venta: lleva de la interrupción a la
@@ -467,11 +467,11 @@ TODOS los siguientes disparadores, respetando el orden cognitivo del cerebro:
         </aside>
 <aside class="sidenote" data-kind="fonte">
 <div class="tag">Fuente</div>
-          El modelo completo de los diez gatillos está publicado en inematds.github.io/FGMD.
-          <div class="src-line">inematds.github.io/FGMD</div>
+          El modelo completo de los diez gatillos está publicado en linnoff88-dev.github.io/arckhe-FGMD.
+          <div class="src-line">linnoff88-dev.github.io/arckhe-FGMD</div>
 </aside>
 <!-- ---- SECAO 5 ---- -->
-<aside data-inema-rail="modulo-5-2#topico-3"></aside>
+<aside data-ARCKHÉ-rail="modulo-5-2#topico-3"></aside>
 <aside class="sidenote" data-kind="definicao">
 <div class="tag">Definición</div>
 <b>NeuroFluxo.</b> El concepto que NCIAFlux explica al usuario: el flujo del cerebro en el día a día. La
@@ -480,14 +480,14 @@ TODOS los siguientes disparadores, respetando el orden cognitivo del cerebro:
 <aside class="sidenote" data-kind="fonte" style="margin-bottom:0">
 <div class="tag">Fuente</div>
           El código y la evolución del proyecto NCIAFlux están abiertos en el repositorio.
-          <div class="src-line">github.com/inematds/NCIAFlux</div>
+          <div class="src-line">github.com/linnoff88-dev/NCIAFlux</div>
 </aside>
 </aside>
 </div></main>
-<footer class="colophon"><span>INEMA.CLUB · Cuaderno del alumno</span><span class="pg">Módulo 5-2</span><span>Compuesto en Spectral &amp; Source Serif 4</span></footer>
+<footer class="colophon"><span>ARCKHÉ AI · Cuaderno del alumno</span><span class="pg">Módulo 5-2</span><span>Compuesto en Spectral &amp; Source Serif 4</span></footer>
 <script src="../assets/learn.js"></script>
 <script>
-    if (window.INEMA && typeof window.INEMA.init === "function") { window.INEMA.init(); }
+    if (window.ARCKHÉ && typeof window.ARCKHÉ.init === "function") { window.ARCKHÉ.init(); }
   </script>
 </body>
 </html>

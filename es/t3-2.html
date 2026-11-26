@@ -6,10 +6,10 @@
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <!-- ===================================================================
        1) ANTI-FOUC — script BLOQUEANTE, PRIMEIRO no <head>, ANTES das fontes
-          e do learn.css. Le inema.prefs (global, cross-curso) e aplica
+          e do learn.css. Le ARCKHÉ.prefs (global, cross-curso) e aplica
           data-theme + color-scheme + --measure/--leading/--fontscale +
           data-font/--font-disp/--font-body ANTES do primeiro paint.
-          try/catch total => default papel no erro (preserva a marca INEMA).
+          try/catch total => default papel no erro (preserva a marca ARCKHÉ).
        =================================================================== -->
 <script>
   (function () {
@@ -19,7 +19,7 @@
       function clone(o) { var r = {}; for (var x in o) r[x] = o[x]; return r; }
       var p = clone(DEF);
       try {
-        var raw = localStorage.getItem('inema.prefs');
+        var raw = localStorage.getItem('ARCKHÉ.prefs');
         if (raw) {
           var parsed = JSON.parse(raw);
           if (parsed && typeof parsed === 'object') {
@@ -74,10 +74,10 @@
     }
   })();
   </script>
-<meta content="inema-ncia" name="inema-course"/>
-<script data-inema-manifest="" type="application/json">
+<meta content="ARCKHÉ-ncia" name="ARCKHÉ-course"/>
+<script data-ARCKHÉ-manifest="" type="application/json">
 {
-  "course": "inema-ncia",
+  "course": "ARCKHÉ-ncia",
   "tracks": [
     {
       "n": "1",
@@ -178,49 +178,49 @@
   ]
 }
   </script>
-<title>Módulo 3-2 — Rutinas que dan soporte | INEMA.NCIA</title>
+<title>Módulo 3-2 — Rutinas que dan soporte | ARCKHÉ.NCIA</title>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&amp;family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400;1,8..60,500&amp;family=IBM+Plex+Mono:wght@400;500&amp;family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet"/>
 <link href="../assets/learn.css" rel="stylesheet"/>
-<link href="https://inematds.github.io/inemancia2/t3-2.html" hreflang="pt-BR" rel="alternate"/><link href="https://inematds.github.io/inemancia2/en/t3-2.html" hreflang="en" rel="alternate"/><link href="https://inematds.github.io/inemancia2/es/t3-2.html" hreflang="es" rel="alternate"/></head>
-<body><div class="inema-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../t3-2.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="../en/t3-2.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="t3-2.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">ES</a></div>
+<link href="https://linnoff88-dev.github.io/arckhe-/t3-2.html" hreflang="pt-BR" rel="alternate"/><link href="https://linnoff88-dev.github.io/arckhe-/en/t3-2.html" hreflang="en" rel="alternate"/><link href="https://linnoff88-dev.github.io/arckhe-/es/t3-2.html" hreflang="es" rel="alternate"/></head>
+<body><div class="ARCKHÉ-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../t3-2.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="../en/t3-2.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="t3-2.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">ES</a></div>
 <a class="skip" href="#reading">Saltar al contenido</a>
 <div class="reader-bar">
 <div class="reader-inner">
-<a class="wordmark" href="https://inema.club" rel="noopener" target="_blank">INEMA<span class="dot">.</span><span class="club">CLUB</span></a>
-<div class="reader-controls" data-inema-appearance="">
-<span class="rc-read"><span data-inema-meter="modulo:3-2"><span data-inema-meter-frac=""><strong>0</strong> de 3</span></span> leídas</span>
+<a class="wordmark" href="https://ARCKHÉ AI" rel="noopener" target="_blank">ARCKHÉ<span class="dot">.</span><span class="club">CLUB</span></a>
+<div class="reader-controls" data-ARCKHÉ-appearance="">
+<span class="rc-read"><span data-ARCKHÉ-meter="modulo:3-2"><span data-ARCKHÉ-meter-frac=""><strong>0</strong> de 3</span></span> leídas</span>
 <div aria-label="Tema de lectura" class="rc-group" role="group">
-<button aria-pressed="true" class="rc-btn" data-inema-set-theme="papel" type="button">Papel</button>
-<button aria-pressed="false" class="rc-btn" data-inema-set-theme="sepia" type="button">Sepia</button>
-<button aria-pressed="false" class="rc-btn" data-inema-set-theme="escuro" type="button">Oscuro</button>
+<button aria-pressed="true" class="rc-btn" data-ARCKHÉ-set-theme="papel" type="button">Papel</button>
+<button aria-pressed="false" class="rc-btn" data-ARCKHÉ-set-theme="sepia" type="button">Sepia</button>
+<button aria-pressed="false" class="rc-btn" data-ARCKHÉ-set-theme="escuro" type="button">Oscuro</button>
 </div>
 <div aria-label="Fuente de lectura" class="rc-group" role="group">
-<button aria-pressed="true" class="rc-btn" data-inema-set-font="serif" type="button">Serif</button>
-<button aria-pressed="false" class="rc-btn" data-inema-set-font="sans" type="button">Sans</button>
-<button aria-pressed="false" class="rc-btn" data-inema-set-font="hyperlegible" title="Atkinson Hyperlegible" type="button">Aa↹</button>
+<button aria-pressed="true" class="rc-btn" data-ARCKHÉ-set-font="serif" type="button">Serif</button>
+<button aria-pressed="false" class="rc-btn" data-ARCKHÉ-set-font="sans" type="button">Sans</button>
+<button aria-pressed="false" class="rc-btn" data-ARCKHÉ-set-font="hyperlegible" title="Atkinson Hyperlegible" type="button">Aa↹</button>
 </div>
 <div aria-label="Tamaño del texto" class="rc-group" role="group">
-<button aria-pressed="true" class="rc-btn" data-inema-set-fontscale="100" type="button">A</button>
-<button aria-pressed="false" class="rc-btn" data-inema-set-fontscale="112" type="button">A+</button>
-<button aria-pressed="false" class="rc-btn" data-inema-set-fontscale="125" type="button">A++</button>
+<button aria-pressed="true" class="rc-btn" data-ARCKHÉ-set-fontscale="100" type="button">A</button>
+<button aria-pressed="false" class="rc-btn" data-ARCKHÉ-set-fontscale="112" type="button">A+</button>
+<button aria-pressed="false" class="rc-btn" data-ARCKHÉ-set-fontscale="125" type="button">A++</button>
 </div>
 <div aria-label="Ancho de línea" class="rc-group" role="group">
-<button aria-pressed="false" class="rc-btn" data-inema-set-linewidth="62" type="button">Estrecho</button>
-<button aria-pressed="true" class="rc-btn" data-inema-set-linewidth="66" type="button">Medio</button>
-<button aria-pressed="false" class="rc-btn" data-inema-set-linewidth="70" type="button">Amplio</button>
+<button aria-pressed="false" class="rc-btn" data-ARCKHÉ-set-linewidth="62" type="button">Estrecho</button>
+<button aria-pressed="true" class="rc-btn" data-ARCKHÉ-set-linewidth="66" type="button">Medio</button>
+<button aria-pressed="false" class="rc-btn" data-ARCKHÉ-set-linewidth="70" type="button">Amplio</button>
 </div>
 </div>
 </div>
 </div>
 <header class="masthead">
 <nav aria-label="Dónde estás" class="wayfind">
-<span><a href="index.html" style="text-decoration:none">INEMA.NCIA</a></span><span class="sep">·</span>
+<span><a href="index.html" style="text-decoration:none">ARCKHÉ.NCIA</a></span><span class="sep">·</span>
 <span><a href="t3.html" style="text-decoration:none">Recorrido <b>3</b></a></span><span class="sep">·</span>
 <span>Módulo <b>3-2</b></span><span class="sep">·</span>
-<span data-inema-section-counter="">Sección 1 de 3</span><span class="sep">·</span>
-<button data-inema-journey-open="" type="button">Mi recorrido <span class="inema-journey-badge" data-count="0" data-inema-journey-badge="">0</span></button>
+<span data-ARCKHÉ-section-counter="">Sección 1 de 3</span><span class="sep">·</span>
+<button data-ARCKHÉ-journey-open="" type="button">Mi recorrido <span class="ARCKHÉ-journey-badge" data-count="0" data-ARCKHÉ-journey-badge="">0</span></button>
 </nav>
 <nav aria-label="Rutas del curso" class="course-nav" data-course-nav="">
 <a class="cn-home" href="index.html">Inicio</a>
@@ -235,12 +235,12 @@
 </header>
 <main class="spread"><div class="leaf">
 <article class="reading" id="reading">
-<p class="kicker">Módulo 3-2 · Ruta 3 · INEMA.NCIA</p>
+<p class="kicker">Módulo 3-2 · Ruta 3 · ARCKHÉ.NCIA</p>
 <h1 class="module">Rutinas que sostienen</h1>
 <p class="deck">Las rutinas que sostienen el juego a largo plazo cuando se acaba el ánimo: la primera hora, las cinco horas y los poderes del sabio.</p>
 <p class="read-meta"><span class="here">Leyendo ahora</span><span>3 secciones</span><span><a href="t3.html" style="color:inherit">← índice de la ruta</a></span></p>
 <section aria-label="Qué cubre este módulo" class="aims"><h2>Qué cubre este módulo</h2><ul><li>La regla de la primera hora de la mañana</li><li>Las cinco horas semanales</li><li>Los diez poderes del sabio</li></ul></section>
-<nav aria-label="Resumen del módulo" class="toc" data-inema-toc="">
+<nav aria-label="Resumen del módulo" class="toc" data-ARCKHÉ-toc="">
 <p class="toc-head">Resumen del módulo</p>
 <ol>
 <li class="current"><span class="dot-now"></span><span class="n">1</span><a href="#topico-1"><span class="t">La regla de la primera hora de la mañana</span></a></li>
@@ -248,25 +248,25 @@
 <li><span class="n">3</span><a href="#topico-3"><span class="t">Los diez poderes del sabio</span></a><span class="leader"></span></li>
 </ol>
 </nav>
-<section data-inema-module="3-2" data-inema-topic="modulo-3-2#topico-1" data-inema-track="3" id="topico-1">
+<section data-ARCKHÉ-module="3-2" data-ARCKHÉ-topic="modulo-3-2#topico-1" data-ARCKHÉ-track="3" id="topico-1">
 <div class="section-mark">
 <span class="where">Sección 1 de 3</span><span>·</span><span>1.ª hora</span>
 </div>
 <h2 class="head"><span class="num">1.</span>La regla de la primera hora de la mañana</h2>
 <div class="prose">
-<p class="lede" data-inema-block="m3-t3-p1">La regla es sencilla: usa la <em>primera hora del día</em> de
+<p class="lede" data-ARCKHÉ-block="m3-t3-p1">La regla es sencilla: usa la <em>primera hora del día</em> de
               forma intencional —para aprender, leer y reflexionar— sin estímulos digitales excesivos.
               Café, lectura, pensamiento; nada de redes sociales. Es la regla atribuida a Jeff Bezos, que reserva ese
               tiempo para leer y pensar, no para revisar el celular.<span class="sidenote-ref">5</span> El punto no es
               despertarte a las cinco de la mañana, sino proteger la primera hora, cualquiera que sea la hora a la que te
               despiertes.</p>
-<p data-inema-block="m3-t3-p2">¿Por qué la primera hora y no cualquier otra? Porque el cerebro recién
+<p data-ARCKHÉ-block="m3-t3-p2">¿Por qué la primera hora y no cualquier otra? Porque el cerebro recién
               despierto es químicamente un terreno fértil para aprender. Aún bajo el efecto del ciclo de sueño, opera
               con niveles altos de dopamina, noradrenalina y acetilcolina, lo que eleva la
               <em>plasticidad sináptica</em>, la capacidad de formar y fortalecer conexiones. Leer quince minutos al
               despertar tiende a generar más retención que leer por la noche, después de un día entero de decisiones.</p>
 <h3 class="sub">Menor carga cognitiva, memoria que se consolida</h3>
-<p data-inema-block="m3-t3-p3">Se suman dos factores. Primero, la <strong>baja carga cognitiva</strong>:
+<p data-ARCKHÉ-block="m3-t3-p3">Se suman dos factores. Primero, la <strong>baja carga cognitiva</strong>:
               por la mañana, la corteza prefrontal — sede del razonamiento y la toma de decisiones — está descansada y
               entiende un concepto difícil con más facilidad que al final de la jornada laboral. En segundo lugar, la
               <strong>consolidación de la memoria</strong>: ocurre en el hipocampo durante el sueño y se refuerza con
@@ -286,25 +286,25 @@
 </details>
 </div>
 </section>
-<section data-inema-module="3-2" data-inema-topic="modulo-3-2#topico-2" data-inema-track="3" id="topico-2">
+<section data-ARCKHÉ-module="3-2" data-ARCKHÉ-topic="modulo-3-2#topico-2" data-ARCKHÉ-track="3" id="topico-2">
 <div class="section-mark">
 <span class="where">Sección 2 de 3</span><span>·</span><span>5 horas</span>
 </div>
 <h2 class="head"><span class="num">2.</span>Las cinco horas semanales</h2>
 <div class="prose">
-<p class="lede" data-inema-block="m3-t4-p1">A <em>regla de las cinco horas</em> — popularizada por
+<p class="lede" data-ARCKHÉ-block="m3-t4-p1">A <em>regla de las cinco horas</em> — popularizada por
               Michael Simmons al observar los hábitos de Benjamin Franklin, Elon Musk, Oprah Winfrey y Bill Gates
               — significa dedicar, deliberadamente, al menos cinco horas por semana al <strong>aprendizaje deliberado</strong>. Cerca de una hora por día hábil. No se trata de “aprender sobre la marcha” a medida que
               surgen los problemas: se trata de reservar tiempo para estudiar, practicar y reflexionar con un objetivo
               claro.<span class="sidenote-ref">7</span></p>
-<p data-inema-block="m3-t4-p2">La diferencia no está en las horas en sí, sino en tres condiciones:
+<p data-ARCKHÉ-block="m3-t4-p2">La diferencia no está en las horas en sí, sino en tres condiciones:
               <strong>constancia</strong> (todos los días hábiles, sin dejarlo para “cuando tengas tiempo”),
               <strong>enfoque deliberado</strong> (elegir qué aprender y definir metas, en vez de consumir
               contenido de forma pasiva) y <strong>medición</strong> (registrar avances y puntos por mejorar).
               Espaciar el aprendizaje a lo largo de la semana, en vez de acumularlo todo de una vez, contradice la curva del
               olvido de Ebbinghaus y ayuda a fijar más contenido.</p>
 <h3 class="sub">El efecto acumulativo es lo que asusta</h3>
-<p data-inema-block="m3-t4-p3">Cinco horas a la semana parecen poco — hasta que las sumas. Son
+<p data-ARCKHÉ-block="m3-t4-p3">Cinco horas a la semana parecen poco — hasta que las sumas. Son
               <strong>260 horas al año</strong>, más de treinta días completos de estudio. En tres años, 780 horas,
               el equivalente a un posgrado práctico. En diez años, 2.600 horas: casi un doctorado en experiencia
               aplicada. Y pocos mantienen la rutina, precisamente porque lo urgente devora lo importante, el objetivo queda
@@ -329,25 +329,25 @@
 </div>
 </details>
 </section>
-<section data-inema-module="3-2" data-inema-topic="modulo-3-2#topico-3" data-inema-track="3" id="topico-3">
+<section data-ARCKHÉ-module="3-2" data-ARCKHÉ-topic="modulo-3-2#topico-3" data-ARCKHÉ-track="3" id="topico-3">
 <div class="section-mark">
 <span class="where">Sección 3 de 3</span><span>·</span><span>10 poderes</span>
 </div>
 <h2 class="head"><span class="num">3.</span>Los diez poderes del sabio</h2>
 <div class="prose">
-<p class="lede" data-inema-block="m3-t5-p1">Reúne diez libros de no ficción que se complementan y tendrás
+<p class="lede" data-ARCKHÉ-block="m3-t5-p1">Reúne diez libros de no ficción que se complementan y tendrás
               una «guía de vida condensada». Cada obra contiene un <em>poder</em> — una virtud
               práctica —y juntos forman una base para el crecimiento, la productividad y el bienestar. La idea de esta
               sección no es resumir cada libro, sino mostrar cómo estos poderes se convierten en un <strong>sistema</strong> del día
               a día.<span class="sidenote-ref">9</span></p>
-<p data-inema-block="m3-t5-p2">Los diez poderes, con la obra base de cada uno: <em>Constancia</em>
+<p data-ARCKHÉ-block="m3-t5-p2">Los diez poderes, con la obra base de cada uno: <em>Constancia</em>
               (Atomic Habits), <em>Disciplina</em> (The 5 AM Club), <em>Gratitud</em> (The Gap and the Gain),
               <em>Claridad</em> (Thinking, Fast and Slow), <em>Aprendizaje</em> (Limitless), <em>Resiliencia</em>
               (13 Things Mentally Strong People Don’t Do), <em>Principios</em> (The 7 Habits of Highly
               Effective People), <em>Conciencia</em> (Sapiens), <em>Prosperidad</em> (Rich Dad, Poor Dad) y
               <em>Visión</em> (A Brief History of Time).</p>
 <h3 class="sub">De una lista de libros a una rutina integrada</h3>
-<p data-inema-block="m3-t5-p3">En la práctica, esto se convierte en un día sencillo. Empieza poco a poco: cambia
+<p data-ARCKHÉ-block="m3-t5-p3">En la práctica, esto se convierte en un día sencillo. Empieza poco a poco: cambia
               <strong>1% por día</strong> y concéntrate en <em>quién quieres ser</em> — no «quiero leer
               más», sino «soy una persona que lee todos los días». Estructura la primera hora en el
               formato <strong>20/20/20</strong>: veinte minutos de movimiento, veinte de reflexión, veinte de
@@ -368,16 +368,16 @@
 </details>
 </div>
 <div class="prose">
-<p data-inema-block="m3-t5-p4">Guarda esta ruta en una sola frase: <em>la motivación se enciende, la determinación la mantiene, el permiso autoriza —y el hábito, repetido durante la primera hora y a lo largo de la semana, es lo que vuelve todo esto inevitable.</em> Ninguno de los poderes actúa por sí solo; su valor está en
+<p data-ARCKHÉ-block="m3-t5-p4">Guarda esta ruta en una sola frase: <em>la motivación se enciende, la determinación la mantiene, el permiso autoriza —y el hábito, repetido durante la primera hora y a lo largo de la semana, es lo que vuelve todo esto inevitable.</em> Ninguno de los poderes actúa por sí solo; su valor está en
               ponerlos en marcha como un sistema, un paso mínimo a la vez.</p>
 </div>
 </section>
 <section aria-label="Mi recorrido" class="journey">
-<div class="journey-top"><h2><span class="ico">❧</span> Mi recorrido</h2><button class="journey-cta" data-inema-journey-open="" type="button">Abrir el cuaderno →</button></div>
+<div class="journey-top"><h2><span class="ico">❧</span> Mi recorrido</h2><button class="journey-cta" data-ARCKHÉ-journey-open="" type="button">Abrir el cuaderno →</button></div>
 <div class="journey-body">
-<div class="jstat"><div class="k">En este módulo</div><div class="v" data-inema-meter="modulo:3-2"><span data-inema-meter-frac=""><strong>0</strong> de 3</span> <span class="nm">secciones leídas</span><div class="progress-line"><span class="progress-line__fill" data-inema-meter-fill=""></span></div></div></div>
-<div class="jstat"><div class="k">En la ruta 3</div><div class="v" data-inema-meter="trilha:3"><span data-inema-meter-frac=""><strong>0</strong> de 5</span> <span class="nm">temas</span><div class="progress-line"><span class="progress-line__fill" data-inema-meter-fill=""></span></div></div></div>
-<div class="jstat"><div class="k">En el curso</div><div class="v" data-inema-meter="curso"><span data-inema-meter-frac=""><strong>0</strong> de 27</span> <span class="nm">recorrido</span><div class="progress-line"><span class="progress-line__fill" data-inema-meter-fill=""></span></div></div></div>
+<div class="jstat"><div class="k">En este módulo</div><div class="v" data-ARCKHÉ-meter="modulo:3-2"><span data-ARCKHÉ-meter-frac=""><strong>0</strong> de 3</span> <span class="nm">secciones leídas</span><div class="progress-line"><span class="progress-line__fill" data-ARCKHÉ-meter-fill=""></span></div></div></div>
+<div class="jstat"><div class="k">En la ruta 3</div><div class="v" data-ARCKHÉ-meter="trilha:3"><span data-ARCKHÉ-meter-frac=""><strong>0</strong> de 5</span> <span class="nm">temas</span><div class="progress-line"><span class="progress-line__fill" data-ARCKHÉ-meter-fill=""></span></div></div></div>
+<div class="jstat"><div class="k">En el curso</div><div class="v" data-ARCKHÉ-meter="curso"><span data-ARCKHÉ-meter-frac=""><strong>0</strong> de 27</span> <span class="nm">recorrido</span><div class="progress-line"><span class="progress-line__fill" data-ARCKHÉ-meter-fill=""></span></div></div></div>
 </div>
 </section>
 <div class="nextup"><div class="txt"><div class="k">Continuar</div><div class="t">Ruta 4 — Habilidades y Talentos del Futuro</div></div><a class="go" href="t4.html">Siguiente →</a></div>
@@ -391,7 +391,7 @@
 </ol>
 <a class="rail-modules__index" href="t3.html">Índice de la ruta →</a>
 </nav>
-<aside data-inema-rail="modulo-3-2#topico-1"></aside>
+<aside data-ARCKHÉ-rail="modulo-3-2#topico-1"></aside>
 <aside class="sidenote" data-kind="definicao">
 <div class="tag">Definición</div>
 <b>Plasticidad sináptica.</b> La capacidad del cerebro para formar y fortalecer conexiones neuronales. Está
@@ -404,7 +404,7 @@
           de despertar. Aprender temprano y volver sobre la idea a lo largo del día lleva el contenido a la memoria de largo plazo.
         </aside>
 <!-- ---- SECAO 4 ---- -->
-<aside data-inema-rail="modulo-3-2#topico-2"></aside>
+<aside data-ARCKHÉ-rail="modulo-3-2#topico-2"></aside>
 <aside class="sidenote" data-kind="definicao">
 <div class="tag">Definición</div>
 <b>Aprendizaje deliberado.</b> Estudiar con un objetivo claro, metas y un plan: lo opuesto a consumir
@@ -416,7 +416,7 @@
           recibir feedback y corregir. Espaciar el aprendizaje durante la semana contradice la curva del olvido de Ebbinghaus.
         </aside>
 <!-- ---- SECAO 5 ---- -->
-<aside data-inema-rail="modulo-3-2#topico-3"></aside>
+<aside data-ARCKHÉ-rail="modulo-3-2#topico-3"></aside>
 <aside class="sidenote" data-kind="definicao">
 <div class="tag">Definición</div>
 <b>20/20/20.</b> La estructura de la primera hora propuesta en <i>The 5 AM Club</i>: veinte minutos de
@@ -431,10 +431,10 @@
         </aside>
 </aside>
 </div></main>
-<footer class="colophon"><span>INEMA.CLUB · Cuaderno del alumno</span><span class="pg">Módulo 3-2</span><span>Compuesto en Spectral &amp; Source Serif 4</span></footer>
+<footer class="colophon"><span>ARCKHÉ AI · Cuaderno del alumno</span><span class="pg">Módulo 3-2</span><span>Compuesto en Spectral &amp; Source Serif 4</span></footer>
 <script src="../assets/learn.js"></script>
 <script>
-    if (window.INEMA && typeof window.INEMA.init === "function") { window.INEMA.init(); }
+    if (window.ARCKHÉ && typeof window.ARCKHÉ.init === "function") { window.ARCKHÉ.init(); }
   </script>
 </body>
 </html>

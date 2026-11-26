@@ -13,7 +13,7 @@
       function clone(o) { var r = {}; for (var x in o) r[x] = o[x]; return r; }
       var p = clone(DEF);
       try {
-        var raw = localStorage.getItem('inema.prefs');
+        var raw = localStorage.getItem('ARCKHÉ.prefs');
         if (raw) {
           var parsed = JSON.parse(raw);
           if (parsed && typeof parsed === 'object') {
@@ -39,10 +39,10 @@
   })();
   </script>
 <!-- 2) Identidade do curso + manifesto (27 tópicos em 6 trilhas) -->
-<meta content="inema-ncia" name="inema-course"/>
-<script data-inema-manifest="" type="application/json">
+<meta content="ARCKHÉ-ncia" name="ARCKHÉ-course"/>
+<script data-ARCKHÉ-manifest="" type="application/json">
   {
-  "course": "inema-ncia",
+  "course": "ARCKHÉ-ncia",
   "tracks": [
     {
       "n": "1",
@@ -143,7 +143,7 @@
   ]
 }
   </script>
-<title>INEMA.NCIA — the channel’s notebook, turned into a reading course | INEMA</title>
+<title>ARCKHÉ.NCIA — the channel’s notebook, turned into a reading course | ARCKHÉ</title>
 <!-- 3) Fontes -->
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -167,9 +167,9 @@
     .cta-note { display: block; margin-top: var(--s3); font-family: var(--mono); font-size: 0.74rem; letter-spacing: 0.04em; color: var(--ink-faint); }
     .stand { margin: var(--s6) 0 0; padding-top: var(--s5); border-top: 1px solid var(--border); display: flex; flex-wrap: wrap; align-items: center; gap: var(--s3) var(--s5); }
     .stand .lbl { font-family: var(--mono); font-size: 0.74rem; letter-spacing: 0.06em; color: var(--ink-faint); }
-    .stand [data-inema-meter] { display: inline-flex; align-items: center; gap: var(--s3); }
-    .stand [data-inema-meter-frac] { font-family: var(--mono); font-size: 0.78rem; color: var(--ink-soft); }
-    .stand [data-inema-meter-frac] strong { color: var(--ink); font-weight: 600; }
+    .stand [data-ARCKHÉ-meter] { display: inline-flex; align-items: center; gap: var(--s3); }
+    .stand [data-ARCKHÉ-meter-frac] { font-family: var(--mono); font-size: 0.78rem; color: var(--ink-soft); }
+    .stand [data-ARCKHÉ-meter-frac] strong { color: var(--ink); font-weight: 600; }
     .stand .progress-line { width: 120px; height: 3px; border-radius: 3px; background: var(--paper-deep, var(--border)); overflow: hidden; }
     .stand .progress-line__fill { display: block; height: 100%; width: 0%; background: var(--accent); transition: width 200ms ease; }
     .curriculo { margin-top: var(--s5); }
@@ -197,34 +197,34 @@
     .closer p { font-family: var(--font-body); color: var(--ink-soft); max-width: var(--measure); margin: 0 0 var(--s5); }
     @media (max-width: 1080px) { .stand .progress-line { width: 90px; } }
   </style>
-<link href="https://inematds.github.io/inemancia2/" hreflang="pt-BR" rel="alternate"/><link href="https://inematds.github.io/inemancia2/en/" hreflang="en" rel="alternate"/><link href="https://inematds.github.io/inemancia2/es/" hreflang="es" rel="alternate"/></head>
-<body><div class="inema-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="./" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">EN</a><a href="../es/" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
+<link href="https://linnoff88-dev.github.io/arckhe-/" hreflang="pt-BR" rel="alternate"/><link href="https://linnoff88-dev.github.io/arckhe-/en/" hreflang="en" rel="alternate"/><link href="https://linnoff88-dev.github.io/arckhe-/es/" hreflang="es" rel="alternate"/></head>
+<body><div class="ARCKHÉ-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="./" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">EN</a><a href="../es/" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
 <a class="skip" href="#reading">Skip to content</a>
 <!-- ===================== READER BAR ===================== -->
 <div class="reader-bar">
 <div class="reader-inner">
-<a class="wordmark" href="https://inema.club" rel="noopener" target="_blank">INEMA<span class="dot">.</span><span class="club">CLUB</span></a>
-<div class="reader-controls" data-inema-appearance="">
-<span class="rc-read"><span data-inema-meter="curso"><span data-inema-meter-frac=""><strong>0</strong> of 27</span></span> covered</span>
+<a class="wordmark" href="https://ARCKHÉ AI" rel="noopener" target="_blank">ARCKHÉ<span class="dot">.</span><span class="club">CLUB</span></a>
+<div class="reader-controls" data-ARCKHÉ-appearance="">
+<span class="rc-read"><span data-ARCKHÉ-meter="curso"><span data-ARCKHÉ-meter-frac=""><strong>0</strong> of 27</span></span> covered</span>
 <div aria-label="Reading theme" class="rc-group" role="group">
-<button aria-pressed="true" class="rc-btn" data-inema-set-theme="papel" type="button">Role</button>
-<button aria-pressed="false" class="rc-btn" data-inema-set-theme="sepia" type="button">Sepia</button>
-<button aria-pressed="false" class="rc-btn" data-inema-set-theme="escuro" type="button">Dark</button>
+<button aria-pressed="true" class="rc-btn" data-ARCKHÉ-set-theme="papel" type="button">Role</button>
+<button aria-pressed="false" class="rc-btn" data-ARCKHÉ-set-theme="sepia" type="button">Sepia</button>
+<button aria-pressed="false" class="rc-btn" data-ARCKHÉ-set-theme="escuro" type="button">Dark</button>
 </div>
 <div aria-label="Reading source" class="rc-group" role="group">
-<button aria-pressed="true" class="rc-btn" data-inema-set-font="serif" type="button">Serif</button>
-<button aria-pressed="false" class="rc-btn" data-inema-set-font="sans" type="button">Sans</button>
-<button aria-pressed="false" class="rc-btn" data-inema-set-font="hyperlegible" title="Atkinson Hyperlegible — maximum legibility" type="button">Aa↹</button>
+<button aria-pressed="true" class="rc-btn" data-ARCKHÉ-set-font="serif" type="button">Serif</button>
+<button aria-pressed="false" class="rc-btn" data-ARCKHÉ-set-font="sans" type="button">Sans</button>
+<button aria-pressed="false" class="rc-btn" data-ARCKHÉ-set-font="hyperlegible" title="Atkinson Hyperlegible — maximum legibility" type="button">Aa↹</button>
 </div>
 <div aria-label="Text size" class="rc-group" role="group">
-<button aria-pressed="true" class="rc-btn" data-inema-set-fontscale="100" type="button">A</button>
-<button aria-pressed="false" class="rc-btn" data-inema-set-fontscale="112" type="button">A+</button>
-<button aria-pressed="false" class="rc-btn" data-inema-set-fontscale="125" type="button">A++</button>
+<button aria-pressed="true" class="rc-btn" data-ARCKHÉ-set-fontscale="100" type="button">A</button>
+<button aria-pressed="false" class="rc-btn" data-ARCKHÉ-set-fontscale="112" type="button">A+</button>
+<button aria-pressed="false" class="rc-btn" data-ARCKHÉ-set-fontscale="125" type="button">A++</button>
 </div>
 <div aria-label="Line width" class="rc-group" role="group">
-<button aria-pressed="false" class="rc-btn" data-inema-set-linewidth="62" type="button">Narrow</button>
-<button aria-pressed="true" class="rc-btn" data-inema-set-linewidth="66" type="button">Medium</button>
-<button aria-pressed="false" class="rc-btn" data-inema-set-linewidth="70" type="button">Broad</button>
+<button aria-pressed="false" class="rc-btn" data-ARCKHÉ-set-linewidth="62" type="button">Narrow</button>
+<button aria-pressed="true" class="rc-btn" data-ARCKHÉ-set-linewidth="66" type="button">Medium</button>
+<button aria-pressed="false" class="rc-btn" data-ARCKHÉ-set-linewidth="70" type="button">Broad</button>
 </div>
 </div>
 </div>
@@ -232,12 +232,12 @@
 <!-- ===================== MASTHEAD ===================== -->
 <header class="masthead">
 <nav aria-label="Where you are" class="wayfind">
-<span><b>INEMA.NCIA</b> · the essential and human</span>
+<span><b>ARCKHÉ.NCIA</b> · the essential and human</span>
 <span class="sep">·</span>
 <span>6 learning paths · 27 sections</span>
 <span class="sep">·</span>
-<button data-inema-journey-open="" type="button">
-        My journey <span class="inema-journey-badge" data-count="0" data-inema-journey-badge="">0</span>
+<button data-ARCKHÉ-journey-open="" type="button">
+        My journey <span class="ARCKHÉ-journey-badge" data-count="0" data-ARCKHÉ-journey-badge="">0</span>
 </button>
 </nav>
 <nav aria-label="Course tracks" class="course-nav" data-course-nav="">
@@ -257,10 +257,10 @@
 <article class="reading" id="reading">
 <!-- HERO -->
 <header class="hero">
-<p class="lede-kicker">INEMA.NCIA · the channel’s notebook, turned into a course</p>
+<p class="lede-kicker">ARCKHÉ.NCIA · the channel’s notebook, turned into a course</p>
 <h1>Information became free.<br/>Who learned to <em>pay attention</em> became rare—and that’s what determines everything else.</h1>
 <p class="sub">This course doesn’t promise a shortcut. It calmly brings together what circulated in the
-            INEMA.NCIA channel about the part the machine can’t do for you: how your attention is auctioned off, how
+            ARCKHÉ.NCIA channel about the part the machine can’t do for you: how your attention is auctioned off, how
             perception distorts value, how habit beats motivation — and which human skills
             remain scarce when everything else has become a commodity.</p>
 <div class="cta-row">
@@ -270,26 +270,26 @@
 <span class="cta-note">No sign-up · opens right away · your progress stays in your browser only.</span>
 <div class="stand">
 <span class="lbl">Your journey</span>
-<span data-inema-meter="curso">
-<span data-inema-meter-frac=""><strong>0</strong> of 27</span> sections
-              <span class="progress-line"><span class="progress-line__fill" data-inema-meter-fill=""></span></span>
+<span data-ARCKHÉ-meter="curso">
+<span data-ARCKHÉ-meter-frac=""><strong>0</strong> of 27</span> sections
+              <span class="progress-line"><span class="progress-line__fill" data-ARCKHÉ-meter-fill=""></span></span>
 </span>
-<button data-inema-journey-open="" style="font-family:var(--mono);font-size:0.74rem;background:none;border:0;color:var(--accent);cursor:pointer;padding:0;text-decoration:underline;text-underline-offset:2px;" type="button">continue where I left off</button>
+<button data-ARCKHÉ-journey-open="" style="font-family:var(--mono);font-size:0.74rem;background:none;border:0;color:var(--accent);cursor:pointer;padding:0;text-decoration:underline;text-underline-offset:2px;" type="button">continue where I left off</button>
 </div>
 </header>
 <!-- O PORQUE -->
-<section data-inema-module="landing" data-inema-topic="modulo-landing#topico-porque" data-inema-track="1" id="topico-porque">
+<section data-ARCKHÉ-module="landing" data-ARCKHÉ-topic="modulo-landing#topico-porque" data-ARCKHÉ-track="1" id="topico-porque">
 <div class="section-mark">
 <span class="where">Why this exists</span><span>·</span><span>Read before the table of contents</span>
 </div>
 <h2 class="head"><span class="num">§</span>A conversation notebook, not an info product</h2>
 <div class="prose">
-<p class="lede" data-inema-block="landing-porque-p1">INEMA.NCIA began as a Telegram channel —
+<p class="lede" data-ARCKHÉ-block="landing-porque-p1">ARCKHÉ.NCIA began as a Telegram channel —
               scattered fragments about the neuroscience of attention, perception, habit, persuasion, and the skills
               that remain when AI takes over the rest.<span class="sidenote-ref">1</span> The problem with the chat format is that
               a good idea scrolls up and disappears. This course gathers those fragments, separates what’s a signal from what
               was just a link, and puts them back together as a text you can read at your own pace.</p>
-<p data-inema-block="landing-porque-p2">The channel makes the same bet: no magic formula, no
+<p data-ARCKHÉ-block="landing-porque-p2">The channel makes the same bet: no magic formula, no
               promise of transformation in thirty days. There are six short, deep learning paths — from the neuroscience of
               focus to viral psychology — and each reads like a session, at your own pace, with the difficult
               details kept in the margin for when you want them.</p>
@@ -306,14 +306,14 @@
 </details>
 </section>
 <!-- CURRICULO COMO INDICE -->
-<section data-inema-module="landing" data-inema-topic="modulo-landing#topico-indice" data-inema-track="1" id="topico-indice">
+<section data-ARCKHÉ-module="landing" data-ARCKHÉ-topic="modulo-landing#topico-indice" data-ARCKHÉ-track="1" id="topico-indice">
 <div class="section-mark">
 <span class="where">The index</span><span>·</span><span>6 learning paths · 27 sections</span>
 </div>
 <h2 class="head"><span class="num">§</span>What you’ll study</h2>
 <div class="curriculo">
 <div class="track-line">
-<span class="track-tag">INEMA.NCIA</span>
+<span class="track-tag">ARCKHÉ.NCIA</span>
 <h3 class="track-title">Six tracks, ten modules</h3>
 <span class="track-meta">27 sections · read at your own pace</span>
 </div>
@@ -394,7 +394,7 @@
 <ul class="idx-mods">
 <li class="idx-modline">
 <a class="idx-modlink" href="t6-1.html"><b>Module 6-1</b> · Channel Resources</a>
-<ol class="idx-secs"><li><a href="t6-1.html#topico-1">Welcome to INEMA.NCIA</a></li><li><a href="t6-1.html#topico-2">Video Library</a></li><li><a href="t6-1.html#topico-3">Channel Topic Index</a></li></ol>
+<ol class="idx-secs"><li><a href="t6-1.html#topico-1">Welcome to ARCKHÉ.NCIA</a></li><li><a href="t6-1.html#topico-2">Video Library</a></li><li><a href="t6-1.html#topico-3">Channel Topic Index</a></li></ol>
 </li>
 </ul>
 <p class="idx-foot"><span>1 modules</span><span class="idx-dot">·</span><span>3 sections</span><span class="idx-dot">·</span><a class="idx-open" href="t6.html">Open the learning path →</a></p>
@@ -407,7 +407,7 @@
 <blockquote>
 <p>“You can’t outsource attention. The machine writes for you; deciding what deserves your
 focus is still your job—and it’s the job that pays the most.”</p>
-<cite><b>INEMA.NCIA</b> · channel summary</cite>
+<cite><b>ARCKHÉ.NCIA</b> · channel summary</cite>
 </blockquote>
 <blockquote>
 <p>“Habit is what remains when motivation runs out. The rest is weather.”</p>
@@ -426,10 +426,10 @@ focus is still your job—and it’s the job that pays the most.”</p>
 </article>
 <!-- TRILHO DE MARGEM -->
 <aside aria-label="Margin: notes and your learning dashboard" class="margin-rail">
-<aside data-inema-rail="modulo-landing#topico-porque"></aside>
+<aside data-ARCKHÉ-rail="modulo-landing#topico-porque"></aside>
 <aside class="sidenote" data-kind="fonte">
 <div class="tag">Source</div>
-          All the content comes from the Telegram channel <b>INEMA.NCIA</b> (27 topics), gathered and rewritten as reading material. Each learning path points back to the original topics in Track 6.
+          All the content comes from the Telegram channel <b>ARCKHÉ.NCIA</b> (27 topics), gathered and rewritten as reading material. Each learning path points back to the original topics in Track 6.
           <div class="src-line">t.me/c/2414677686</div>
 </aside>
 <aside class="sidenote" data-kind="definicao">
@@ -437,7 +437,7 @@ focus is still your job—and it’s the job that pays the most.”</p>
 <b>Learning path</b> groups sections; each <b>section</b> isolates one idea. There are 6 paths, 27 sections. Read in order
           or jump straight to the one that interests you—your progress is saved in your browser.
         </aside>
-<aside data-inema-rail="modulo-landing#topico-indice"></aside>
+<aside data-ARCKHÉ-rail="modulo-landing#topico-indice"></aside>
 <aside class="sidenote" data-kind="fundo">
 <div class="tag">Why the index is dense</div>
           The density of the index is proof of seriousness, not a lack of marketing: each track includes the <i>why</i> in
@@ -447,13 +447,13 @@ focus is still your job—and it’s the job that pays the most.”</p>
 </div>
 </main>
 <footer class="colophon">
-<span>INEMA.CLUB · Student Workbook</span>
-<span class="pg">INEMA.NCIA — landing page</span>
+<span>ARCKHÉ AI · Student Workbook</span>
+<span class="pg">ARCKHÉ.NCIA — landing page</span>
 <span>Set in Spectral &amp; Source Serif 4</span>
 </footer>
 <script src="../assets/learn.js"></script>
 <script>
-    if (window.INEMA && typeof window.INEMA.init === 'function') { window.INEMA.init(); }
+    if (window.ARCKHÉ && typeof window.ARCKHÉ.init === 'function') { window.ARCKHÉ.init(); }
   </script>
 </body>
 </html>
